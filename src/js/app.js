@@ -3,12 +3,12 @@
 const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', () => {
-    ui.mostrarEstablecimientos();
+    ui.showStations();
 });
 
 // Habilitar búsqueda en vivo.
 
-const buscador = document.querySelector('#search input');
+const buscador = document.getElementById('search-input');
 
 buscador.addEventListener('input', () => {
     // Si es mayor a 5, buscar sugerencias
@@ -17,6 +17,6 @@ buscador.addEventListener('input', () => {
         ui.obtenerSugerencias(buscador.value);
     } else if (buscador.value.length === 0) {
         // Mostrar los pines
-        ui.mostrarEstablecimientos();
+        ui.showStations();
     }
 });

@@ -2,106 +2,100 @@ class UI {
     constructor() {
         // Instanciar la API
         this.api = new API();
-
         // Crear los mapas en un grupo
         this.markers = new L.LayerGroup();
-
         // Iniciar el mapa
-        this.mapa = this.inicializarMapa();
-
-    }
-
-    inicializarMapa() {
-
-
-        // Inicializar y obtener la propiedad del mapa
-
-        // const map = L.map('map').setView([19.390519, -99.3739778], 6);
-        var map = L.map('map');
-
-        const enlaceMapa = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
-
-        function buscarLocalizacion(e) {
-            L.marker(e.latlng).addTo(map);
-        }
-
-
-        function errorLocalizacion(e) {
-            alert("No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización.");
-        }
-        map.locate({ setView: true, maxZoom: 40 });
-
-        map.on('locationerror', errorLocalizacion);
-        map.on('locationfound', buscarLocalizacion);
-
-        return map;
-
-
-
-
-
+        this.map = this.mapInit();
     }
 
 
-    //     Función que busca localización 
+
+
+    mapInit() {
+            // Inicializar y obtener la propiedad del mapa
+
+            var map = L.map("map");
+            L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+                attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>',
+                minZoom: 1,
+                maxZoom: 18,
+                ext: 'png'
+            }).addTo(map);
+
+            let customIcon = new L.Icon({
+                iconUrl: 'https://image.flaticon.com/icons/svg/854/854866.svg',
+                iconSize: [50, 50],
+                iconAnchor: [25, 50]
+            });
 
 
 
-    // Mostrar Establecimientos de la api
-    mostrarEstablecimientos() {
-            this.api.obtenerDatos()
-                .then(datos => {
-                    const resultado = datos.respuestaJSON[0].id;
-                    // Muestra los pines en el Mapa
-                    this.mostrarPines(resultado);
-                });
+
+            function buscarLocalizacion(e) {
+
+                L.marker(e.latlng, { icon: customIcon }).addTo(map);
+            }
+
+            function errorLocalizacion(e) {
+                alert(
+                    "No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización."
+                );
+            }
+            map.locate({ setView: true, maxZoom: 40 });
+            map.on("locationerror", errorLocalizacion);
+            map.on("locationfound", buscarLocalizacion);
+            return map;
+        }
+        // Mostrar Establecimientos de la api
+    showStations() {
+            this.api.getData().then(data => {
+                //const result = data;
+                //console.log(data);
+                // Muestra los pines en el Mapa
+                this.showPins(data);
+
+            });
         }
         // Muestra los pines
-    mostrarPines(datos) {
+    showPins(data) {
+            this.markers.clearLayers();
+            // Recorrer establecimientos
+            data.forEach(element => {
+                // Destructuración
+                const { name, plug_type, kw_price, state, geolocation } = element;
+                const optionsPopUp = L.popup().setContent(`
+                               <p>Dirección:</p>
+                               <p> <b>Nombre:</b> ${name}</p>
+                               <p> <b>Precio:</b> $ ${kw_price}</p>
+                               <p> <b>Conector:</b> ${plug_type}</p>
+                               <p> <b>Disponibilidad:</b> ${state}</p>
+                               `);
+                // Agregar el Pin
+                const marker = new L.marker([
+                    parseFloat(geolocation.latitude),
+                    parseFloat(geolocation.longitude)
+                ]).bindPopup(optionsPopUp);
+                this.markers.addLayer(marker);
 
-        this.markers.clearLayers();
-
-        // Recorrer establecimientos
-        datos.forEach(dato => {
-            // Destucturing 
-            const { latitude, longitude, calle, regular, premium } = dato;
-
-            const opcionesPopUp = L.popup()
-                .setContent(`<p>Calle: ${calle}</p> 
-                            <p></p><b>Regular:</b>$ ${regular}</p>
-                            <p> <b>Premium:</b>$ ${premium}</p>`);
-
-            // Agregar el Pin
-            const marker = new L.marker([
-                    parseFloat(latitude),
-                    parseFloat(longitude)
-                ])
-                .bindPopup(opcionesPopUp)
-
-            this.markers.addLayer(marker);
-        });
-        this.markers.addTo(this.mapa)
-    }
-
-    // Obtiene las sugerencias de la REST API
-    obtenerSugerencias(busqueda) {
-        this.api.obtenerDatos()
-            .then(datos => {
+            });
+            this.markers.addTo(this.map);
+        }
+        // Obtiene las sugerencias de la REST API
+    obtenerSugerencias(search) {
+            this.api.getData().then(data => {
                 // Obtener los resultados
-                const resultados = datos.respuestaJSON.results;
-
+                //const resultados = datos.respuestaJSON.results;
                 // Enviar el JSON y la busqueda al Filtro
-                this.filtrarSugerencias(resultados, busqueda);
-            })
-    }
+                this.filtrarSugerencias(data, search);
 
-    // Filtrar las sugerencias de busqueda
-    filtrarSugerencias(resultados, busqueda) {
-        const filtro = resultados.filter(filtro => filtro.calle.indexOf(busqueda) !== -1);
-
+            });
+        }
+        // Filtrar las sugerencias de busqueda
+    filtrarSugerencias(data, search) {
+        const filterData = data.filter(
+            filter => filter.state.indexOf(search) !== -1
+        );
         // Mostrar pines del Filtro
-        this.mostrarPines(filtro);
+        this.showPins(filterData);
     }
 }

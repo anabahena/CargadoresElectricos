@@ -1,0 +1,806 @@
+{
+  "stations": [
+    {
+      "id": 1,
+      "adress": "Nieto, Zona Centro, 20000 Aguascalientes, Ags.",
+      "name": "Tesla S.A.",
+      "plug_type": "AC 43 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-102.296", "latitude": "21.87982" },
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Nissan",
+      "plug_type": "AC 30 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-102.0893", "latitude": "22.23832" }
+    },
+    {
+      "id": 3,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-102.7188", "latitude": "21.84691" }
+    },
+    {
+      "id": 4,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-102.3", "latitude": "22.36641" }
+    },
+    {
+      "id": 5,
+      "name": "BMW VECSA",
+      "plug_type": "DC 35 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-101.9653", "latitude": "21.91887" }
+    },
+    {
+      "id": 6,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 50 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-102.3434", "latitude": "21.96127" }
+    },
+    {
+      "id": 7,
+      "name": "Nissan",
+      "plug_type": "AC 30 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-102.2765", "latitude": "22.1492" }
+    },
+    {
+      "id": 8,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 35 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-102.3231", "latitude": "22.22923" }
+    },
+    {
+      "id": 9,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 35 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-102.2727", "latitude": "22.07239" }
+    },
+    {
+      "id": 10,
+      "name": "Nissan",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-102.4156", "latitude": "22.15022" }
+    },
+    {
+      "id": 11,
+      "name": "Empresa electrica",
+      "plug_type": "DC 35 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-102.167", "latitude": "22.22423" }
+    },
+    {
+      "id": 12,
+      "name": "BMW VECSA",
+      "plug_type": "AC 43 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-116.5951", "latitude": "31.80894" }
+    },
+    {
+      "id": 13,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 30 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-115.4756", "latitude": "32.64117" }
+    },
+    {
+      "id": 14,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 30 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-117.0189", "latitude": "32.53246" }
+    },
+    {
+      "id": 15,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 43 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-116.6265", "latitude": "32.57268" }
+    },
+    {
+      "id": 16,
+      "name": "Nissan",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-110.3108", "latitude": "24.14222" }
+    },
+    {
+      "id": 17,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 50 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-109.6947", "latitude": "23.06159" }
+    },
+    {
+      "id": 18,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-111.3433", "latitude": "26.01278" }
+    },
+    {
+      "id": 19,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-111.6732", "latitude": "25.03443" }
+    },
+    {
+      "id": 20,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 50 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-112.2683", "latitude": "27.33687" }
+    },
+    {
+      "id": 21,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 43 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-105.1716", "latitude": "27.69496" }
+    },
+    {
+      "id": 22,
+      "name": "Nissan",
+      "plug_type": "DC 50 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-106.0763", "latitude": "28.63679" }
+    },
+    {
+      "id": 23,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.4711", "latitude": "28.19333" }
+    },
+    {
+      "id": 24,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-105.6671", "latitude": "26.92209" }
+    },
+    {
+      "id": 25,
+      "name": "Empresa electrica",
+      "plug_type": "DC 25 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-104.923", "latitude": "27.13055" }
+    },
+    {
+      "id": 26,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.485", "latitude": "31.74647" }
+    },
+    {
+      "id": 27,
+      "name": "BMW VECSA",
+      "plug_type": "AC 22 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.9121", "latitude": "30.41399" }
+    },
+    {
+      "id": 28,
+      "name": "Empresa electrica",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-107.8298", "latitude": "28.95276" }
+    },
+    {
+      "id": 29,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-106.5124", "latitude": "30.61773" }
+    },
+    {
+      "id": 30,
+      "name": "Nissan",
+      "plug_type": "AC 22 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.9113", "latitude": "28.83838" }
+    },
+    {
+      "id": 31,
+      "name": "Empresa electrica",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.3951", "latitude": "26.93943" }
+    },
+    {
+      "id": 32,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.8875", "latitude": "28.5945" }
+    },
+    {
+      "id": 33,
+      "name": "Empresa electrica",
+      "plug_type": "AC 43 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-107.9959", "latitude": "31.09218" }
+    },
+    {
+      "id": 34,
+      "name": "Empresa electrica",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-107.2536", "latitude": "28.76494" }
+    },
+    {
+      "id": 35,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 30 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-106.3469", "latitude": "26.95411" }
+    },
+    {
+      "id": 36,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-107.7397", "latitude": "27.02665" }
+    },
+    {
+      "id": 37,
+      "name": "Empresa electrica",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-107.5893", "latitude": "27.84074" }
+    },
+    {
+      "id": 38,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 43 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.4713", "latitude": "29.84337" }
+    },
+    {
+      "id": 39,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 43 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-107.0568", "latitude": "27.91653" }
+    },
+    {
+      "id": 40,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-107.9488", "latitude": "30.3757" }
+    },
+    {
+      "id": 41,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 50 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.1583", "latitude": "26.73762" }
+    },
+    {
+      "id": 42,
+      "name": "Empresa electrica",
+      "plug_type": "AC 22 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-105.0944", "latitude": "29.46204" }
+    },
+    {
+      "id": 43,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 43 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-105.1964", "latitude": "27.86389" }
+    },
+    {
+      "id": 44,
+      "name": "Tesla S.A.",
+      "plug_type": "AC 43 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.866", "latitude": "28.40631" }
+    },
+    {
+      "id": 45,
+      "name": "BMW VECSA",
+      "plug_type": "DC 50 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.8367", "latitude": "28.24111" }
+    },
+    {
+      "id": 46,
+      "name": "Nissan",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-108.5362", "latitude": "27.39281" }
+    },
+    {
+      "id": 47,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 22 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.477", "latitude": "28.15467" }
+    },
+    {
+      "id": 48,
+      "name": "Empresa electrica",
+      "plug_type": "AC 30 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-107.6167", "latitude": "30.11295" }
+    },
+    {
+      "id": 49,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 25 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-106.3681", "latitude": "28.34335" }
+    },
+    {
+      "id": 50,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 25 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-107.7387", "latitude": "29.35702" }
+    },
+    {
+      "id": 51,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.5101", "latitude": "28.24782" }
+    },
+    {
+      "id": 52,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 30 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-107.0694", "latitude": "26.81915" }
+    },
+    {
+      "id": 53,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 30 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.1018", "latitude": "31.39011" }
+    },
+    {
+      "id": 54,
+      "name": "Tesla S.A.",
+      "plug_type": "AC 43 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.9644", "latitude": "26.09452" }
+    },
+    {
+      "id": 55,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 35 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-108.28", "latitude": "27.27638" }
+    },
+    {
+      "id": 56,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-107.4869", "latitude": "28.54819" }
+    },
+    {
+      "id": 57,
+      "name": "BMW VECSA",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-106.1795", "latitude": "27.05467" }
+    },
+    {
+      "id": 58,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 35 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-107.7642", "latitude": "29.64321" }
+    },
+    {
+      "id": 59,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 30 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-108.1898", "latitude": "30.88726" }
+    },
+    {
+      "id": 60,
+      "name": "Nissan",
+      "plug_type": "AC 30 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.4306", "latitude": "28.42306" }
+    },
+    {
+      "id": 61,
+      "name": "Empresa electrica",
+      "plug_type": "AC 30 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.0331", "latitude": "27.0025" }
+    },
+    {
+      "id": 62,
+      "name": "Empresa electrica",
+      "plug_type": "AC 22 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-107.994", "latitude": "27.8593" }
+    },
+    {
+      "id": 63,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 22 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-103.9078", "latitude": "29.10739" }
+    },
+    {
+      "id": 64,
+      "name": "Empresa electrica",
+      "plug_type": "AC 30 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.7546", "latitude": "28.84323" }
+    },
+    {
+      "id": 65,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 30 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-105.5833", "latitude": "26.76388" }
+    },
+    {
+      "id": 66,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-105.4803", "latitude": "28.2678" }
+    },
+    {
+      "id": 67,
+      "name": "BMW VECSA",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.6772", "latitude": "26.67053" }
+    },
+    {
+      "id": 68,
+      "name": "Nissan",
+      "plug_type": "AC 30 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-108.5232", "latitude": "28.14838" }
+    },
+    {
+      "id": 69,
+      "name": "Empresa electrica",
+      "plug_type": "AC 30 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.4089", "latitude": "29.25076" }
+    },
+    {
+      "id": 70,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "AC 22 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-106.7353", "latitude": "27.47205" }
+    },
+    {
+      "id": 71,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 50 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-108.3667", "latitude": "28.19383" }
+    },
+    {
+      "id": 72,
+      "name": "Nissan",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-104.4157", "latitude": "29.5645" }
+    },
+    {
+      "id": 73,
+      "name": "Nissan",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.0054", "latitude": "31.37207" }
+    },
+    {
+      "id": 74,
+      "name": "Tesla S.A.",
+      "plug_type": "AC 22 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-106.5026", "latitude": "28.54601" }
+    },
+    {
+      "id": 75,
+      "name": "Empresa electrica",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-105.5544", "latitude": "28.18694" }
+    },
+    {
+      "id": 76,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 25 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-106.2955", "latitude": "27.31964" }
+    },
+    {
+      "id": 77,
+      "name": "EV Chargers Mexico",
+      "plug_type": "AC 22 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-106.6849", "latitude": "27.90182" }
+    },
+    {
+      "id": 78,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 35 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-105.3346", "latitude": "27.58855" }
+    },
+    {
+      "id": 79,
+      "name": "BMW VECSA",
+      "plug_type": "DC 35 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.8501", "latitude": "26.85899" }
+    },
+    {
+      "id": 80,
+      "name": "BMW VECSA",
+      "plug_type": "DC 25 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-105.8181", "latitude": "26.8021" }
+    },
+    {
+      "id": 81,
+      "name": "Nissan",
+      "plug_type": "DC 35 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-106.1072", "latitude": "27.95603" }
+    },
+    {
+      "id": 82,
+      "name": "Tesla S.A.",
+      "plug_type": "AC 22 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-105.288", "latitude": "28.03267" }
+    },
+    {
+      "id": 83,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 25 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-106.2663", "latitude": "27.05361" }
+    },
+    {
+      "id": 84,
+      "name": "BMW VECSA",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-107.9143", "latitude": "27.21272" }
+    },
+    {
+      "id": 85,
+      "name": "Nissan",
+      "plug_type": "DC 35 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-108.2152", "latitude": "27.86792" }
+    },
+    {
+      "id": 86,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 50 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-105.811", "latitude": "27.45713" }
+    },
+    {
+      "id": 87,
+      "name": "Nissan",
+      "plug_type": "DC 50 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-90.53965", "latitude": "19.84481" }
+    },
+    {
+      "id": 88,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-91.83645", "latitude": "18.63779" }
+    },
+    {
+      "id": 89,
+      "name": "BMW VECSA",
+      "plug_type": "DC 50 kW",
+      "kw_price": "50",
+      "state": "free",
+      "geolocation": { "longitude": "-90.05074", "latitude": "20.37123" }
+    },
+    {
+      "id": 90,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 25 kW",
+      "kw_price": "25",
+      "state": "free",
+      "geolocation": { "longitude": "-90.72389", "latitude": "19.35622" }
+    },
+    {
+      "id": 91,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 43 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-90.13451", "latitude": "20.17697" }
+    },
+    {
+      "id": 92,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 35 kW",
+      "kw_price": "35",
+      "state": "free",
+      "geolocation": { "longitude": "-89.84505", "latitude": "19.74555" }
+    },
+    {
+      "id": 93,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-92.0909", "latitude": "18.2536" }
+    },
+    {
+      "id": 94,
+      "name": "Cuautehmoc EVC",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "busy",
+      "geolocation": { "longitude": "-90.22576", "latitude": "20.03968" }
+    },
+    {
+      "id": 95,
+      "name": "Tesla S.A.",
+      "plug_type": "AC 22 kW",
+      "kw_price": "45",
+      "state": "free",
+      "geolocation": { "longitude": "-90.732", "latitude": "18.60431" }
+    },
+    {
+      "id": 96,
+      "name": "EV Chargers Mexico",
+      "plug_type": "DC 35 kW",
+      "kw_price": "25",
+      "state": "busy",
+      "geolocation": { "longitude": "-91.0463", "latitude": "18.18345" }
+    },
+    {
+      "id": 97,
+      "name": "BMW VECSA",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-100.9783", "latitude": "29.33001" }
+    },
+    {
+      "id": 98,
+      "name": "Tesla S.A.",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-101.4172", "latitude": "26.90124" }
+    },
+    {
+      "id": 99,
+      "name": "Nissan",
+      "plug_type": "DC 25 kW",
+      "kw_price": "50",
+      "state": "busy",
+      "geolocation": { "longitude": "-100.5284", "latitude": "28.70809" }
+    },
+    {
+      "id": 100,
+      "name": "Cargadoras reales mexicanas",
+      "plug_type": "DC 25 kW",
+      "kw_price": "35",
+      "state": "busy",
+      "geolocation": { "longitude": "-100.9997", "latitude": "25.42167" }
+    }
+  ]
+}

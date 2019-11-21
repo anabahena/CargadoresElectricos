@@ -1,14 +1,14 @@
 class API {
-    async obtenerDatos() {
+    async getData() {
         // Obtener desde la API
-        const datos = await fetch('https://api-electric-charger.herokuapp.com/electricCharger');
-
+        const response = await fetch("./data/stations.json");
         // Retornar como JSON
-        const respuestaJSON = await datos.json();
+        const json = await response.json();
+        //Entra a el 'key' stations
+        const data = json.stations;
+        // console.log(data);
 
         // Retornar el objeto
-        return {
-            respuestaJSON
-        }
+        return data;
     }
 }
