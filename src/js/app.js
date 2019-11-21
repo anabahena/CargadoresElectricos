@@ -3,8 +3,8 @@
 const ui = new UI();
 
 document.addEventListener('DOMContentLoaded', () => {
-     ui.showStations();
-})
+    ui.showStations();
+});
 
 // Habilitar búsqueda en vivo.
 

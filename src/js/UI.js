@@ -1,34 +1,28 @@
 class UI {
-  constructor() {
-    // Instanciar la API
-    this.api = new API();
-
-    // Crear los mapas en un grupo
-    this.markers = new L.LayerGroup();
-
-    // Iniciar el mapa
-    this.map = this.mapInit();
-  }
-
-  mapInit() {
-    // Inicializar y obtener la propiedad del mapa
-    var map = L.map("map");
-
-    const enlaceMapa = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-
-    L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
-
-    function buscarLocalizacion(e) {
-      L.marker(e.latlng).addTo(map);
+    constructor() {
+        // Instanciar la API
+        this.api = new API();
+        // Crear los mapas en un grupo
+        this.markers = new L.LayerGroup();
+        // Iniciar el mapa
+        this.map = this.mapInit();
     }
+    mapInit() {
+            // Inicializar y obtener la propiedad del mapa
+            var map = L.map("map");
+            const enlaceMapa = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
 
-    function errorLocalizacion(e) {
-      alert(
-        "No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización."
-      );
-    }
+            function buscarLocalizacion(e) {
+                L.marker(e.latlng).addTo(map);
+            }
+
+            function errorLocalizacion(e) {
+                alert(
+                    "No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización."
+                );
+            }
     map.locate({ setView: true, maxZoom: 40 });
-
     map.on("locationerror", errorLocalizacion);
     map.on("locationfound", buscarLocalizacion);
 
