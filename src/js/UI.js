@@ -24,8 +24,8 @@ class UI {
 
             L.Routing.control({
                 waypoints: [
-                    L.latLng(57.74, 11.94),
-                    L.latLng(57.6792, 11.949)
+                    L.latLng(19.421348, -99.163183),
+                    L.latLng(19.420184, -99.160555)
 
                 ],
                 routeWhileDragging: true
