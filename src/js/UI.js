@@ -13,13 +13,22 @@ class UI {
 
     mapInit() {
             // Inicializar y obtener la propiedad del mapa
-
             var map = L.map("map");
-            L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-                attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>',
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap contributors',
                 minZoom: 1,
                 maxZoom: 18,
                 ext: 'png'
+            }).addTo(map);
+
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(57.74, 11.94),
+                    L.latLng(57.6792, 11.949)
+
+                ],
+                routeWhileDragging: true
             }).addTo(map);
 
             let customIcon = new L.Icon({
@@ -58,29 +67,31 @@ class UI {
         }
         // Muestra los pines
     showPins(data) {
-            this.markers.clearLayers();
-            // Recorrer establecimientos
-            data.forEach(element => {
-                // Destructuración
-                const { name, plug_type, kw_price, state, geolocation } = element;
-                const optionsPopUp = L.popup().setContent(`
+        this.markers.clearLayers();
+        // Recorrer establecimientos
+        data.forEach(element => {
+            // Destructuración
+            const { name, plug_type, kw_price, state, geolocation } = element;
+            const optionsPopUp = L.popup().setContent(`
                                <p>Dirección:</p>
                                <p> <b>Nombre:</b> ${name}</p>
                                <p> <b>Precio:</b> $ ${kw_price}</p>
                                <p> <b>Conector:</b> ${plug_type}</p>
                                <p> <b>Disponibilidad:</b> ${state}</p>
                                `);
-                // Agregar el Pin
-                const marker = new L.marker([
-                    parseFloat(geolocation.latitude),
-                    parseFloat(geolocation.longitude)
-                ]).bindPopup(optionsPopUp);
-                this.markers.addLayer(marker);
+            // Agregar el Pin
+            const marker = new L.marker([
+                parseFloat(geolocation.latitude),
+                parseFloat(geolocation.longitude)
+            ]).bindPopup(optionsPopUp);
+            this.markers.addLayer(marker);
 
-            });
-            this.markers.addTo(this.map);
-        }
-        // Obtiene las sugerencias de la REST API
+        });
+        this.markers.addTo(this.map);
+    }
+
+
+    // Obtiene las sugerencias de la REST API
     obtenerSugerencias(search) {
             this.api.getData().then(data => {
                 // Obtener los resultados
