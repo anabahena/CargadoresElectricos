@@ -2,11 +2,13 @@
   "stations": [
     {
       "id": 1,
+      "adress": "Nieto, Zona Centro, 20000 Aguascalientes, Ags.",
       "name": "Tesla S.A.",
       "plug_type": "AC 43 kW",
       "kw_price": "25",
       "state": "free",
-      "geolocation": { "longitude": "-102.296", "latitude": "21.87982" }
+      "geolocation": { "longitude": "-102.296", "latitude": "21.87982" },
+      "rating": 5
     },
     {
       "id": 2,

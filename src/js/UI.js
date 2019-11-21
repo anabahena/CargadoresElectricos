@@ -62,7 +62,7 @@ class UI {
             // Recorrer establecimientos
             data.forEach(element => {
                 // Destructuración
-                const { id, name, plug_type, kw_price, state, geolocation } = element;
+                const { name, plug_type, kw_price, state, geolocation } = element;
                 const optionsPopUp = L.popup().setContent(`
                                <p>Dirección:</p>
                                <p> <b>Nombre:</b> ${name}</p>
