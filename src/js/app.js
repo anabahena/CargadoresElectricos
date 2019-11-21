@@ -14,7 +14,7 @@ buscador.addEventListener('input', () => {
      // Si es mayor a 5, buscar sugerencias
      if(buscador.value.length > 3) {
          // Obtener sugerencias que sean parte de la busqueda
-         ui.obtenerSugerencias(buscador.value);
+         ui.obtenerSugerencias(buscador.value.toLowerCase());
      } else if(buscador.value.length === 0) {
           // Mostrar los pines
           ui.showStations();
