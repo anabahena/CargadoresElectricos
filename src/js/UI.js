@@ -9,34 +9,42 @@ class UI {
         // Iniciar el mapa
         this.mapa = this.inicializarMapa();
 
+
     }
 
     inicializarMapa() {
 
 
-        // Inicializar y obtener la propiedad del mapa
+
 
         // const map = L.map('map').setView([19.390519, -99.3739778], 6);
         var map = L.map('map');
 
-        const enlaceMapa = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> '
+        }).addTo(map);
 
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+
 
         function buscarLocalizacion(e) {
+
             L.marker(e.latlng).addTo(map);
         }
+
+
 
 
         function errorLocalizacion(e) {
             alert("No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización.");
         }
-        map.locate({ setView: true, maxZoom: 40 });
+
+        map.locate({ setView: true, maxZoom: 30 });
 
         map.on('locationerror', errorLocalizacion);
         map.on('locationfound', buscarLocalizacion);
 
         return map;
+
 
 
 
@@ -53,14 +61,14 @@ class UI {
     mostrarEstablecimientos() {
             this.api.obtenerDatos()
                 .then(datos => {
-                    const resultado = datos.respuestaJSON[0].id;
+                    const resultado = datos.respuestaJSON.results;
                     // Muestra los pines en el Mapa
                     this.mostrarPines(resultado);
                 });
         }
         // Muestra los pines
     mostrarPines(datos) {
-
+        // 
         this.markers.clearLayers();
 
         // Recorrer establecimientos
@@ -68,6 +76,7 @@ class UI {
             // Destucturing 
             const { latitude, longitude, calle, regular, premium } = dato;
 
+            //   Agregar PIN
             const opcionesPopUp = L.popup()
                 .setContent(`<p>Calle: ${calle}</p> 
                             <p></p><b>Regular:</b>$ ${regular}</p>
