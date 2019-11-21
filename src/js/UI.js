@@ -12,6 +12,31 @@ class UI {
 
   mapInit() {
     // Inicializar y obtener la propiedad del mapa
+    var map = L.map("map");
+
+    const enlaceMapa = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+
+    L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
+
+    function buscarLocalizacion(e) {
+      L.marker(e.latlng).addTo(map);
+    }
+
+    function errorLocalizacion(e) {
+      alert(
+        "No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización."
+      );
+    }
+    map.locate({ setView: true, maxZoom: 40 });
+
+    map.on("locationerror", errorLocalizacion);
+    map.on("locationfound", buscarLocalizacion);
+
+    return map;
+  }
+
+  /* mapInit() {
+    // Inicializar y obtener la propiedad del mapa
     const map = L.map("map").setView([19.390519, -99.3739778], 6);
 
     const mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
@@ -22,7 +47,7 @@ class UI {
     }).addTo(map);
 
     return map;
-  }
+  } */
 
   // Mostrar Establecimientos de la api
   showStations() {
