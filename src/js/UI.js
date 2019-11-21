@@ -35,26 +35,9 @@ class UI {
     return map;
   }
 
-  /* mapInit() {
-    // Inicializar y obtener la propiedad del mapa
-    const map = L.map("map").setView([19.390519, -99.3739778], 6);
-
-    const mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-
-    L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; " + mapLink + " Contributors",
-      maxZoom: 18
-    }).addTo(map);
-
-    return map;
-  } */
-
-  // Mostrar Establecimientos de la api
+  // Mostrar Estaciones de la api
   showStations() {
     this.api.getData().then(data => {
-      //const result = data;
-      //console.log(data);
-
       // Muestra los pines en el Mapa
       this.showPins(data);
     });
@@ -66,7 +49,7 @@ class UI {
     // Recorrer establecimientos
     data.forEach(element => {
       // Destructuración
-      const { id, name, plug_type, kw_price, state, geolocation } = element;
+      const { name, plug_type, kw_price, state, geolocation } = element;
 
       const optionsPopUp = L.popup().setContent(`
                             <p>Dirección:</p> 
