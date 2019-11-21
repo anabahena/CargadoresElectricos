@@ -31,7 +31,7 @@ class UI {
         function errorLocalizacion(e) {
             alert("No es posible encontrar su ubicación. Es posible que tenga que activar la geolocalización.");
         }
-        map.locate({ setView: true, maxZoom: 30 });
+        map.locate({ setView: true, maxZoom: 40 });
 
         map.on('locationerror', errorLocalizacion);
         map.on('locationfound', buscarLocalizacion);
@@ -53,10 +53,10 @@ class UI {
     mostrarEstablecimientos() {
             this.api.obtenerDatos()
                 .then(datos => {
-                    const resultado = datos.respuestaJSON.results;
+                    const resultado = datos.respuestaJSON[0].id;
                     // Muestra los pines en el Mapa
                     this.mostrarPines(resultado);
-                })
+                });
         }
         // Muestra los pines
     mostrarPines(datos) {
