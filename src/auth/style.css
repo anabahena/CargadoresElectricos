@@ -1,0 +1,17 @@
+/*Mobile first*/
+
+/*Welcome view*/
+
+.welcome-box {
+    text-align: center;
+}
+
+.welcome-btn {
+    background-color: #000000;
+    margin: .7rem;
+    width: 15rem;
+}
+
+.login-box {
+    display: none;
+}

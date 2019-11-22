@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
@@ -9,30 +10,60 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <!--Enlace a firebase-->
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
     <title>App| Electro-charge</title>
 </head>
 
 <body>
-    <section class="input-group mb-3">
-        <!--UserName-->
-        <article class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
-        </article>
-        
-        <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username"
-            aria-describedby="basic-addon1" id="register-name">
-        <!--UserMail-->
-        <input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username"
-            aria-describedby="basic-addon1" id="register-mail">
-        <!--UserPassword-->
-        <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username"
-            aria-describedby="basic-addon1" id="register-password">
-
-        <button type="button" class="btn btn-dark" id="sending-info">Enviar</button>
+    <!--Welcome view-->
+    <section class="container-fluid welcome-box">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="col-12">
+                    <figure>
+                        <img src="../assets/cargaText.png" width="100rem" alt="aplication-text">
+                    </figure>
+                </div>
+                <div class="col-12">
+                    <figure class="col">
+                        <img src="../assets/logoCarga.png" width="150rem" alt="app-logo">
+                    </figure>
+                </div>
+                <div class="col-12">
+                    <h6>Previene, planea y eficienta</h6>
+                </div>
+                <div class="col-12">
+                    <button id="toLoginView" type="button" class="btn btn-dark .btn-lg welcome-btn">Inicia Sesión </button>
+                </div>
+                <div class="col-12">
+                    <button id="toSignupView" type="button" class="btn btn-dark .btn-lg welcome-btn">Registrate</button>
+                </div>
+            </div>
+        </div>
     </section>
+    <!--Login section-->
+    <div class="login-box">
+        <section class="input-group mb-3">
+            <!--UserName-->
+            <article class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </article>
+
+            <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username"
+                aria-describedby="basic-addon1" id="register-name">
+            <!--UserMail-->
+            <input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username"
+                aria-describedby="basic-addon1" id="register-mail">
+            <!--UserPassword-->
+            <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username"
+                aria-describedby="basic-addon1" id="register-password">
+
+            <button type="button" class="btn btn-dark" id="sending-info">Enviar</button>
+        </section>
+    </div>
+    <!--Link to login functionality-->
     <script src="register.js"></script>
     <!--Link to Firebase document with SDK -->
     <script src="initialize.js"></script>
