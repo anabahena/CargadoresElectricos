@@ -13,7 +13,7 @@ class UI {
     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
 
     //función para trazar ruta desde ubicación usuario
-   /*  var options = {
+     var options = {
       enableHighAccuracy: true,
       timeout: 5000,
       maximumAge: 0
@@ -38,7 +38,7 @@ class UI {
     }
 
     navigator.geolocation.getCurrentPosition(success, error, options);
- */
+ 
     const customIcon = new L.Icon({
       iconUrl: "https://image.flaticon.com/icons/svg/854/854866.svg",
       iconSize: [50, 50],
