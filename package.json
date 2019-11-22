@@ -1,0 +1,27 @@
+{
+  "name": "cargadores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "cached-path-relative": "^1.0.2",
+    "leaflet-extra-markers": "^1.1.0",
+    "leaflet-routing-machine": "^3.2.12",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anabahena/CargadoresElectricos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anabahena/CargadoresElectricos/issues"
+  },
+  "homepage": "https://github.com/anabahena/CargadoresElectricos#readme"
+}
