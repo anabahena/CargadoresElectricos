@@ -109,4 +109,20 @@ class UI {
         // Mostrar pines del Filtro
         this.showPins(filterData);
     }
+
+    filtrarName(data, name) {
+        const filterNameStatio = data.filter(
+            filter => filter.name.indexOf(name) !== -1
+        );
+        // Mostrar pines del Filtro
+        this.showPins(filterData);
+    }
+
+    filtraplug(data, plug) {
+        const filterplug = data.filter(
+            filter => filter.plug_type.indexOf(plug) !== -1
+        );
+        // Mostrar pines del Filtro
+        this.showPins(filterData);
+    }
 }

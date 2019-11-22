@@ -9,6 +9,11 @@ body,
     height: 100%;
 }
 
+#home {
+    margin: 0;
+    padding: 0;
+}
+
 #search {
     position: relative;
 }
@@ -22,7 +27,19 @@ body,
 }
 
 #map {
-    height: 500px;
+    height: 65vh;
+}
+
+.buttons {
+    width: 100vw;
+    height: 10vh;
+}
+
+.btn-map {
+    color: white;
+    background: black;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 @media (max-width: 768px) {
