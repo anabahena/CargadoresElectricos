@@ -29,11 +29,11 @@ const navBar = document.getElementById('navbar');
 const btnReservar = document.getElementById('btn-map');
 const calendario = document.getElementById('calendario');
 
-const getCalendar = () => {
+// const getCalendar = () => {
 
-};
+// };
 
-registerBtn.addEventListener('click', getSectionLogin);
+// registerBtn.addEventListener('click', getSectionLogin);
 
 
 //Function to display selected area
