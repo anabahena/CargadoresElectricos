@@ -1,46 +1,26 @@
 {
-  "name": "cargadores",
-  "version": "1.0.0",
-  "description": "",
-<<<<<<< HEAD
-  "main": "index.js",
-  "dependencies": {
-    "browserify": "^16.5.0",
-    "cached-path-relative": "^1.0.2",
-    "leaflet-extra-markers": "^1.1.0",
-    "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {},
-=======
-  "main": "src/index.html",
->>>>>>> edb2cca85e99e7bf1583d50c8d7e6f551af438e6
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-<<<<<<< HEAD
-    "url": "git+https://github.com/anabahena/CargadoresElectricos.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anabahena/CargadoresElectricos/issues"
-  },
-  "homepage": "https://github.com/anabahena/CargadoresElectricos#readme"
-=======
-    "url": "git+https://github.com/eriika19/CargadoresElectricos.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eriika19/CargadoresElectricos/issues"
-  },
-  "homepage": "https://github.com/eriika19/CargadoresElectricos/src",
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
->>>>>>> edb2cca85e99e7bf1583d50c8d7e6f551af438e6
+    "name": "cargadores",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "browserify": "^16.5.0",
+        "cached-path-relative": "^1.0.2",
+        "leaflet-extra-markers": "^1.1.0",
+        "node-fetch": "^2.6.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anabahena/CargadoresElectricos.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/anabahena/CargadoresElectricos/issues"
+    },
+    "homepage": "https://github.com/anabahena/CargadoresElectricos#readme"
 }
