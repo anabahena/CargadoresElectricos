@@ -9,8 +9,17 @@
     text-align: center;
 }
 
-.welcome-btn {
+.welcome-btn, .register-btn, .login-btn {
     background-color: #000000;
     margin: .7rem;
     width: 15rem;
 }
+
+.welcome-text {
+    margin: 1rem;
+}
+
+/* .input-form {
+    margin: 1rem;
+} */
+
