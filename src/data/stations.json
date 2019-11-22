@@ -520,163 +520,203 @@
         },
         {
             "id": 61,
+            "adress": "Palacio Municipal Sn, Centro, 33940 Villa López, Chih.",
             "name": "Empresa electrica",
             "plug_type": "AC 30 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-105.0331", "latitude": "27.0025" }
+            "geolocation": { "longitude": "-105.0331", "latitude": "27.0025" },
+            "rating": 2
         },
         {
             "id": 62,
+            "adress": "Maguarichi, Chihuahua",
             "name": "Empresa electrica",
             "plug_type": "AC 22 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-107.994", "latitude": "27.8593" }
+            "geolocation": { "longitude": "-107.994", "latitude": "27.8593" },
+            "rating": 1
         },
         {
             "id": 63,
+            "adress": "Porvenir, Manuel Benavides, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 22 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-103.9078", "latitude": "29.10739" }
+            "geolocation": { "longitude": "-103.9078", "latitude": "29.10739" },
+            "rating": 4
         },
         {
             "id": 64,
+            "adress": "F.G Quintana y Calle Morelos Vieja & Calle 1a, Rubio, Chihuahua",
             "name": "Empresa electrica",
             "plug_type": "AC 30 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.7546", "latitude": "28.84323" }
+            "geolocation": { "longitude": "-107.7546", "latitude": "28.84323" },
+            "rating": 5
         },
         {
             "id": 65,
+            "adress": "5 de Mayo, Matamoros, Mariano Matamoros, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 30 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-105.5833", "latitude": "26.76388" }
+            "geolocation": { "longitude": "-105.5833", "latitude": "26.76388" },
+            "rating": 4
         },
         {
             "id": 66,
+            "adress": "Centro, 33130 Pedro Meoqui, Chihuahua",
             "name": "EV Chargers Mexico",
             "plug_type": "AC 22 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-105.4803", "latitude": "28.2678" }
+            "geolocation": { "longitude": "-105.4803", "latitude": "28.2678"},
+            "rating": 5
         },
         {
             "id": 67,
+            "adress": "Morelos Municipality, Chihuahua",
             "name": "BMW VECSA",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.6772", "latitude": "26.67053" }
+            "geolocation": { "longitude": "-107.6772", "latitude": "26.67053"},
+            "rating": 4
         },
         {
             "id": 68,
+            "adress": "Calle Hidalgo 1, 33340 Moris, Chih.",
             "name": "Nissan",
             "plug_type": "AC 30 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-108.5232", "latitude": "28.14838" }
+            "geolocation": { "longitude": "-108.5232", "latitude": "28.14838"},
+            "rating": 3
         },
         {
             "id": 69,
+            "adress": "San Pedro, Namiquipa, Chih.",
             "name": "Empresa electrica",
             "plug_type": "AC 30 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.4089", "latitude": "29.25076" }
+            "geolocation": { "longitude": "-107.4089", "latitude": "29.25076"},
+            "rating": 4
         },
         {
             "id": 70,
+            "adress": "Independencia 5, Nonoava, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 22 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-106.7353", "latitude": "27.47205" }
+            "geolocation": { "longitude": "-106.7353", "latitude": "27.47205"},
+            "rating": 2
         },
         {
             "id": 71,
+            "adress": "Melchor Ocampo, Chihuahua",
             "name": "Tesla S.A.",
             "plug_type": "DC 50 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-108.3667", "latitude": "28.19383" }
+            "geolocation": { "longitude": "-108.3667", "latitude": "28.19383"},
+            "rating": 3
         },
         {
             "id": 72,
+            "adress": "Zócalo, Centro, 32880 Ojinaga, Chih.",
             "name": "Nissan",
             "plug_type": "DC 50 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-104.4157", "latitude": "29.5645" }
+            "geolocation": { "longitude": "-104.4157", "latitude": "29.5645"},
+            "rating": 4
         },
         {
             "id": 73,
+            "adress": "Calle Fernando Honorable Peréz, Praxedis G. Guerrero, Chih.",
             "name": "Nissan",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-106.0054", "latitude": "31.37207" }
+            "geolocation": { "longitude": "-106.0054", "latitude": "31.37207"},
+            "rating": 5
         },
         {
             "id": 74,
+            "adress": "Libertad, San Andrés, Chih.",
             "name": "Tesla S.A.",
             "plug_type": "AC 22 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-106.5026", "latitude": "28.54601" }
+            "geolocation": { "longitude": "-106.5026", "latitude": "28.54601"},
+            "rating": 3
         },
         {
             "id": 75,
+            "adress": "México, Santa Cruz de Rosales, Chih.",
             "name": "Empresa electrica",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-105.5544", "latitude": "28.18694" }
+            "geolocation": { "longitude": "-105.5544", "latitude": "28.18694" },
+            "rating": 4
         },
         {
             "id": 76,
+            "adress": "Valle del Rosario, Chihuahua",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 25 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-106.2955", "latitude": "27.31964" }
+            "geolocation": { "longitude": "-106.2955", "latitude": "27.31964" },
+            "rating": 3
         },
         {
             "id": 77,
+            "adress": "Segunda, Sector 1, San Francisco de Borja, Chih.",
             "name": "EV Chargers Mexico",
             "plug_type": "AC 22 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-106.6849", "latitude": "27.90182" }
+            "geolocation": { "longitude": "-106.6849", "latitude": "27.90182"},
+            "rating": 4
         },
         {
             "id": 78,
+            "adress": "Hidalgo SN, Centro, 33680 San Francisco de Conchos, Chih.",
             "name": "Tesla S.A.",
             "plug_type": "DC 35 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-105.3346", "latitude": "27.58855" }
+            "geolocation": { "longitude": "-105.3346", "latitude": "27.58855"},
+            "rating": 5
         },
         {
             "id": 79,
+            "adress": "Vicente Guerrero, Centro, 33500 San Francisco del Oro, Chih.",
             "name": "BMW VECSA",
             "plug_type": "DC 35 kW",
             "kw_price": "45",
             "state": "busy",
-            "geolocation": { "longitude": "-105.8501", "latitude": "26.85899" }
+            "geolocation": { "longitude": "-105.8501", "latitude": "26.85899"},
+            "rating": 3
         },
         {
             "id": 80,
+            "adress": "Maclovio Herrera 1, Centro, 33580 Santa Bárbara, Chih.",
             "name": "BMW VECSA",
             "plug_type": "DC 25 kW",
             "kw_price": "45",
             "state": "busy",
-            "geolocation": { "longitude": "-105.8181", "latitude": "26.8021" }
+            "geolocation": { "longitude": "-105.8181", "latitude": "26.8021" },
+            "rating": 4
         },
         {
             "id": 81,
