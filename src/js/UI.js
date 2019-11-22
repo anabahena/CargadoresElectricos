@@ -13,6 +13,29 @@ class UI {
 
     mapInit() {
             // Inicializar y obtener la propiedad del mapa
+            var map = L.map("map");
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap contributors',
+                minZoom: 1,
+                maxZoom: 18,
+                ext: 'png'
+            }).addTo(map);
+
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(19.421348, -99.163183),
+                    L.latLng(19.420184, -99.160555)
+
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
+
+            let customIcon = new L.Icon({
+                iconUrl: 'https://image.flaticon.com/icons/svg/854/854866.svg',
+                iconSize: [50, 50],
+                iconAnchor: [25, 50]
+            });
 
             var map = L.map("map");
             L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
@@ -27,8 +50,6 @@ class UI {
                 iconSize: [50, 50],
                 iconAnchor: [25, 50]
             });
-
-
 
 
             function buscarLocalizacion(e) {
@@ -58,29 +79,31 @@ class UI {
         }
         // Muestra los pines
     showPins(data) {
-            this.markers.clearLayers();
-            // Recorrer establecimientos
-            data.forEach(element => {
-                // Destructuración
-                const { name, plug_type, kw_price, state, geolocation } = element;
-                const optionsPopUp = L.popup().setContent(`
+        this.markers.clearLayers();
+        // Recorrer establecimientos
+        data.forEach(element => {
+            // Destructuración
+            const { name, plug_type, kw_price, state, geolocation } = element;
+            const optionsPopUp = L.popup().setContent(`
                                <p>Dirección:</p>
                                <p> <b>Nombre:</b> ${name}</p>
                                <p> <b>Precio:</b> $ ${kw_price}</p>
                                <p> <b>Conector:</b> ${plug_type}</p>
                                <p> <b>Disponibilidad:</b> ${state}</p>
                                `);
-                // Agregar el Pin
-                const marker = new L.marker([
-                    parseFloat(geolocation.latitude),
-                    parseFloat(geolocation.longitude)
-                ]).bindPopup(optionsPopUp);
-                this.markers.addLayer(marker);
+            // Agregar el Pin
+            const marker = new L.marker([
+                parseFloat(geolocation.latitude),
+                parseFloat(geolocation.longitude)
+            ]).bindPopup(optionsPopUp);
+            this.markers.addLayer(marker);
 
-            });
-            this.markers.addTo(this.map);
-        }
-        // Obtiene las sugerencias de la REST API
+        });
+        this.markers.addTo(this.map);
+    }
+
+
+    // Obtiene las sugerencias de la REST API
     obtenerSugerencias(search) {
             this.api.getData().then(data => {
                 // Obtener los resultados
@@ -94,6 +117,22 @@ class UI {
     filtrarSugerencias(data, search) {
         const filterData = data.filter(
             filter => filter.state.indexOf(search) !== -1
+        );
+        // Mostrar pines del Filtro
+        this.showPins(filterData);
+    }
+
+    filtrarName(data, name) {
+        const filterNameStatio = data.filter(
+            filter => filter.name.indexOf(name) !== -1
+        );
+        // Mostrar pines del Filtro
+        this.showPins(filterData);
+    }
+
+    filtraplug(data, plug) {
+        const filterplug = data.filter(
+            filter => filter.plug_type.indexOf(plug) !== -1
         );
         // Mostrar pines del Filtro
         this.showPins(filterData);
