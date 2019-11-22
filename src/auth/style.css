@@ -42,6 +42,10 @@ body {
     border-radius: 2rem;
 }
 
+.ux-text {
+    margin-top: 8rem;
+}
+
 /* .input-form {
     margin: 1rem;
 } */
