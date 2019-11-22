@@ -1,5 +1,5 @@
 const signUp = (mail, password) => {
-    console.log(mail, password);
+    console.log('se registra');
     
     // firebase.auth().createUserWithEmailAndPassword(email, password)
     // .then(()=> {

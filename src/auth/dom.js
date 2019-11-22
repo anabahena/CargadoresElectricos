@@ -4,9 +4,6 @@ const registerName = document.getElementById('register-name');
 const registerMail = document.getElementById('register-mail');
 const registerPassword = document.getElementById('register-password');
 
-console.log(registerMail, registerName.value, registerPassword);
-
-
 //User Login
 const loginName = document.getElementById('login-name');
 const loginMail = document.getElementById('login-mail');
@@ -22,8 +19,8 @@ const renderLogin = document.getElementById('toLoginView');
 const renderSignUp = document.getElementById('toSignupView');
 
 //Button to send info to firebase
-const loginBtn = document.getElementById('sendingRegister-info');
-const registerBtn = document.getElementById('sendingLogin-info');
+const loginBtn = document.getElementById('sendingLogin-info');
+const registerBtn = document.getElementById('sendingRegister-info');
 
 
 //Function to display selected area
@@ -35,18 +32,22 @@ const goSection = (section) => {
 
 //Events
 renderSignUp.addEventListener('click', () => {
-    goSection(loginView)
+    goSection(registerView)
 });
 
 
 renderLogin.addEventListener('click', () => {
-    goSection(registerView)
+    goSection(loginView)
 });
 
 registerBtn.addEventListener('click', () => {
-    console.log('entra a registerBtn', registerMail.value, registerPassword.value);
+    console.log('entra a registerBtn');
     
     // signUp(registerMail.value,registerPassword.value);
+});
+
+loginBtn.addEventListener('click', () => {
+console.log('Inicia sesión');
 });
 
 loginBtn.addEventListener('click', () => {
