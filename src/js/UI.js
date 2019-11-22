@@ -30,39 +30,54 @@ class UI {
                               `);
                 const latitude = pos.coords.latitude;
                 const longitude = pos.coords.longitude;
+
+
+
+
                 // console.log(pos.coords.accuracy);
-                L.Routing.control({
-                        lineOptions: {
-                            styles: [
-                                { color: 'white', opacity: 0.9, weight: 9 },
-                                { color: 'black', opacity: 1, weight: 5 }
-                            ]
+
+                const btnLlegar = document.getElementById('btn-llegar')
+
+                const calcularRoute = () => {
+
+                    L.Routing.control({
+                            lineOptions: {
+                                styles: [
+                                    { color: 'white', opacity: 0.9, weight: 9 },
+                                    { color: 'green', opacity: 1, weight: 5 }
+                                ]
+                            },
+
+
+                            waypoints: [
+                                L.latLng(latitude, longitude),
+                                L.latLng(21.87982, -102.296)
+                            ],
+                            createMarker: function(i, dStart, n) {
+                                return L.marker(dStart.latLng, {
+                                    draggable: true,
+                                    bounceOnAdd: true,
+                                    bounceOnAddOptions: {
+                                        duration: 1000,
+                                        height: 800,
+                                        function() {
+                                            (popup.openOn(map))
+                                        }
+                                    },
+
+                                    icon: customIcon
+                                }).bindPopup(optionsPopUp).openPopup();
+                            },
+                            routeWhileDragging: true,
                         },
 
 
-                        waypoints: [
-                            L.latLng(latitude, longitude),
-                            L.latLng(19.420184, -99.160555)
-                        ],
-                        createMarker: function(i, dStart, n) {
-                            return L.marker(dStart.latLng, {
-                                draggable: true,
-                                bounceOnAdd: true,
-                                bounceOnAddOptions: {
-                                    duration: 1000,
-                                    height: 800,
-                                    function() {
-                                        (popup.openOn(map))
-                                    }
-                                },
 
-                                icon: customIcon
-                            }).bindPopup(optionsPopUp).openPopup();
-                        },
-                        routeWhileDragging: true,
-                    },
+                    ).addTo(map);
+                }
 
-                ).addTo(map);
+                btnLlegar.addEventListener('click', calcularRoute);
+
             }
 
             function error(err) {
