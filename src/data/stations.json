@@ -198,165 +198,208 @@
             "geolocation": { "longitude": "-112.2683", "latitude": "27.33687" },
             "rating": 4
         },
+
+
+
         {
             "id": 21,
+            "adress": "Hidalgo 302, Centro, 33700 Centro, Chih.",
             "name": "Cuautehmoc EVC",
             "plug_type": "AC 43 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-105.1716", "latitude": "27.69496" }
+            "geolocation": { "longitude": "-105.1716", "latitude": "27.69496" },
+            "rating": 3
         },
         {
             "id": 22,
+            "adress": "Av. Independencia 209, Centro, 31000 Chihuahua, Chih.",
             "name": "Nissan",
             "plug_type": "DC 50 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-106.0763", "latitude": "28.63679" }
+            "geolocation": { "longitude": "-106.0763", "latitude": "28.63679" },
+            "rating": 2
         },
         {
             "id": 23,
+            "adress": "Av. Primera Ote. 1, Oriente 1, 33000 Delicias, Chih.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-105.4711", "latitude": "28.19333" }
+            "geolocation": { "longitude": "-105.4711", "latitude": "28.19333" },
+            "rating": 5
         },
         {
             "id": 24,
+            "adress": "Las Americas, 33880 Hidalgo del Parral, Chih.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-105.6671", "latitude": "26.92209" }
+            "geolocation": { "longitude": "-105.6671", "latitude": "26.92209" },
+            "rating": 5
         },
         {
             "id": 25,
             "name": "Empresa electrica",
+            "adress": "Independencia Esq. Hidalgo S/N, Centro, 33980 José Mariano Jiménez, Chih.",
             "plug_type": "DC 25 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-104.923", "latitude": "27.13055" }
+            "geolocation": { "longitude": "-104.923", "latitude": "27.13055" },
+            "rating": 1
         },
         {
             "id": 26,
+            "adress": "Chamizal, Cd Juárez, Chih.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-106.485", "latitude": "31.74647" }
+            "geolocation": { "longitude": "-106.485", "latitude": "31.74647" },
+            "rating": 2
         },
         {
             "id": 27,
+            "adress": "Centro, 31700 Nuevo Casas Grandes, Chih.",
             "name": "BMW VECSA",
             "plug_type": "AC 22 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.9121", "latitude": "30.41399" }
+            "geolocation": { "longitude": "-107.9121", "latitude": "30.41399" },
+            "rating": 5
         },
         {
             "id": 28,
+            "adress": "Juárez, Labor de la Purísima, Chih.",
             "name": "Empresa electrica",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-107.8298", "latitude": "28.95276" }
+            "geolocation": { "longitude": "-107.8298", "latitude": "28.95276" },
+            "rating": 2
         },
         {
             "id": 29,
+            "adress": "Av. Hidalgo, Zona Centro, Villa Ahumada, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 50 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-106.5124", "latitude": "30.61773" }
+            "geolocation": { "longitude": "-106.5124", "latitude": "30.61773" },
+            "rating": 5
         },
         {
             "id": 30,
+            "adress": "Calle Juárez s/n, Centro, 32910 Juan Aldama, Chih.",
             "name": "Nissan",
             "plug_type": "AC 22 kW",
             "kw_price": "25",
             "state": "busy",
-            "geolocation": { "longitude": "-105.9113", "latitude": "28.83838" }
+            "geolocation": { "longitude": "-105.9113", "latitude": "28.83838" },
+            "rating": 1
         },
         {
             "id": 31,
+            "adress": "Ignacio Allende 3-5, Centro, Valle de Ignacio Allende, Chih.",
             "name": "Empresa electrica",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
             "state": "busy",
-            "geolocation": { "longitude": "-105.3951", "latitude": "26.93943" }
+            "geolocation": { "longitude": "-105.3951", "latitude": "26.93943" },
+            "rating": 3
         },
         {
             "id": 32,
+            "adress": "CHIH 42 12, Centro, Santa Eulalia, Chih.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-105.8875", "latitude": "28.5945" }
+            "geolocation": { "longitude": "-105.8875", "latitude": "28.5945" },
+            "rating": 2
         },
         {
             "id": 33,
+            "adress": "S. Carlos, Centro, 31820 Ascensión, Chih.",
             "name": "Empresa electrica",
             "plug_type": "AC 43 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-107.9959", "latitude": "31.09218" }
+            "geolocation": { "longitude": "-107.9959", "latitude": "31.09218" },
+            "rating": 4
         },
         {
             "id": 34,
+            "adress": "Cuarta, Juárez, Bachíniva, Chih.",
             "name": "Empresa electrica",
             "plug_type": "AC 22 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-107.2536", "latitude": "28.76494" }
+            "geolocation": { "longitude": "-107.2536", "latitude": "28.76494" },
+            "rating": 1.5
         },
         {
             "id": 35,
+            "adress": "Del Comercio, Centro, Mariano Balleza, Chih.",
             "name": "Cuautehmoc EVC",
             "plug_type": "AC 30 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-106.3469", "latitude": "26.95411" }
+            "geolocation": { "longitude": "-106.3469", "latitude": "26.95411" },
+            "rating": 2
         },
         {
             "id": 36,
+            "adress": "Zona Centro, Batopilas, Chih.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-107.7397", "latitude": "27.02665" }
+            "geolocation": { "longitude": "-107.7397", "latitude": "27.02665" },
+            "rating": 4
         },
         {
             "id": 37,
+            "adress": "Sector 1, Bocoyna, Chih.",
             "name": "Empresa electrica",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
             "state": "busy",
-            "geolocation": { "longitude": "-107.5893", "latitude": "27.84074" }
+            "geolocation": { "longitude": "-107.5893", "latitude": "27.84074" },
+            "rating": 1
         },
         {
             "id": 38,
+            "adress": "Calle Anáhuac 100, Las Manzanas, San Buenaventura, Chih.",
             "name": "EV Chargers Mexico",
             "plug_type": "AC 43 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.4713", "latitude": "29.84337" }
+            "geolocation": { "longitude": "-107.4713", "latitude": "29.84337" },
+            "rating": 2
         },
         {
             "id": 39,
+            "adress": "Mina 176, Centro, Carichí, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 43 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-107.0568", "latitude": "27.91653" }
+            "geolocation": { "longitude": "-107.0568", "latitude": "27.91653" },
+            "rating": 5
         },
         {
             "id": 40,
+            "adress": "Centro, Nuevo Casas Grandes, Chih.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-107.9488", "latitude": "30.3757" }
+            "geolocation": { "longitude": "-107.9488", "latitude": "30.3757" },
+            "rating": 2
         },
         {
             "id": 41,
@@ -520,6 +563,14 @@
         },
         {
             "id": 61,
+            "name": "Empresa electrica",
+            "plug_type": "AC 30 kW",
+            "kw_price": "50",
+            "state": "busy",
+            "geolocation": { "longitude": "-105.0331", "latitude": "27.0025" }
+        },
+        {
+            "id": 61,
             "adress": "Palacio Municipal Sn, Centro, 33940 Villa López, Chih.",
             "name": "Empresa electrica",
             "plug_type": "AC 30 kW",
@@ -575,7 +626,7 @@
             "plug_type": "AC 22 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-105.4803", "latitude": "28.2678"},
+            "geolocation": { "longitude": "-105.4803", "latitude": "28.2678" },
             "rating": 5
         },
         {
@@ -585,7 +636,7 @@
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.6772", "latitude": "26.67053"},
+            "geolocation": { "longitude": "-107.6772", "latitude": "26.67053" },
             "rating": 4
         },
         {
@@ -595,7 +646,7 @@
             "plug_type": "AC 30 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-108.5232", "latitude": "28.14838"},
+            "geolocation": { "longitude": "-108.5232", "latitude": "28.14838" },
             "rating": 3
         },
         {
@@ -605,7 +656,7 @@
             "plug_type": "AC 30 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.4089", "latitude": "29.25076"},
+            "geolocation": { "longitude": "-107.4089", "latitude": "29.25076" },
             "rating": 4
         },
         {
@@ -615,7 +666,7 @@
             "plug_type": "AC 22 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-106.7353", "latitude": "27.47205"},
+            "geolocation": { "longitude": "-106.7353", "latitude": "27.47205" },
             "rating": 2
         },
         {
@@ -625,7 +676,7 @@
             "plug_type": "DC 50 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-108.3667", "latitude": "28.19383"},
+            "geolocation": { "longitude": "-108.3667", "latitude": "28.19383" },
             "rating": 3
         },
         {
@@ -635,7 +686,7 @@
             "plug_type": "DC 50 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-104.4157", "latitude": "29.5645"},
+            "geolocation": { "longitude": "-104.4157", "latitude": "29.5645" },
             "rating": 4
         },
         {
@@ -645,7 +696,7 @@
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-106.0054", "latitude": "31.37207"},
+            "geolocation": { "longitude": "-106.0054", "latitude": "31.37207" },
             "rating": 5
         },
         {
@@ -655,7 +706,7 @@
             "plug_type": "AC 22 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-106.5026", "latitude": "28.54601"},
+            "geolocation": { "longitude": "-106.5026", "latitude": "28.54601" },
             "rating": 3
         },
         {
@@ -685,7 +736,7 @@
             "plug_type": "AC 22 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-106.6849", "latitude": "27.90182"},
+            "geolocation": { "longitude": "-106.6849", "latitude": "27.90182" },
             "rating": 4
         },
         {
@@ -695,7 +746,7 @@
             "plug_type": "DC 35 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-105.3346", "latitude": "27.58855"},
+            "geolocation": { "longitude": "-105.3346", "latitude": "27.58855" },
             "rating": 5
         },
         {
@@ -705,7 +756,7 @@
             "plug_type": "DC 35 kW",
             "kw_price": "45",
             "state": "busy",
-            "geolocation": { "longitude": "-105.8501", "latitude": "26.85899"},
+            "geolocation": { "longitude": "-105.8501", "latitude": "26.85899" },
             "rating": 3
         },
         {
@@ -720,163 +771,203 @@
         },
         {
             "id": 81,
+            "adress": "Victoria, San Francisco Javier de Satevó, Chih.",
             "name": "Nissan",
             "plug_type": "DC 35 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-106.1072", "latitude": "27.95603" }
+            "geolocation": { "longitude": "-106.1072", "latitude": "27.95603" },
+            "rating": 5
         },
         {
             "id": 82,
+            "adress": "33620, Av. Séptima 100, Centro, Saucillo, Chih.",
             "name": "Tesla S.A.",
             "plug_type": "AC 22 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-105.288", "latitude": "28.03267" }
+            "geolocation": { "longitude": "-105.288", "latitude": "28.03267" },
+            "rating": 3
         },
         {
             "id": 83,
+            "adress": "Ponce de Leon, El Tule, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 25 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-106.2663", "latitude": "27.05361" }
+            "geolocation": { "longitude": "-106.2663", "latitude": "27.05361" },
+            "rating": 3
         },
         {
             "id": 84,
+            "adress": "Urique, Chih.",
             "name": "BMW VECSA",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-107.9143", "latitude": "27.21272" }
+            "geolocation": { "longitude": "-107.9143", "latitude": "27.21272" },
+            "rating": 4
         },
         {
             "id": 85,
+            "adress": "Honorable de la Tableta, Uruachi, Chih.",
             "name": "Nissan",
             "plug_type": "DC 35 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-108.2152", "latitude": "27.86792" }
+            "geolocation": { "longitude": "-108.2152", "latitude": "27.86792" },
+            "rating": 5
         },
         {
             "id": 86,
+            "adress": "Valle de Zaragoza, Chih.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 50 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-105.811", "latitude": "27.45713" }
+            "geolocation": { "longitude": "-105.811", "latitude": "27.45713" },
+            "rating": 4
         },
         {
             "id": 87,
+            "adress": "Calle 8 325, Zona Centro, 24000 Campeche, Camp.",
             "name": "Nissan",
             "plug_type": "DC 50 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-90.53965", "latitude": "19.84481" }
+            "geolocation": { "longitude": "-90.53965", "latitude": "19.84481" },
+            "rating": 3
         },
         {
             "id": 88,
+            "adress": "Calle 22 91, Centro, 24100 Cd del Carmen, Camp.",
             "name": "Tesla S.A.",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-91.83645", "latitude": "18.63779" }
+            "geolocation": { "longitude": "-91.83645", "latitude": "18.63779" },
+            "rating": 5
         },
         {
             "id": 89,
+            "adress": "San Miguel Kukab, 24903 Calkiní, Camp.",
             "name": "BMW VECSA",
             "plug_type": "DC 50 kW",
             "kw_price": "50",
             "state": "free",
-            "geolocation": { "longitude": "-90.05074", "latitude": "20.37123" }
+            "geolocation": { "longitude": "-90.05074", "latitude": "20.37123" },
+            "rating": 4
         },
         {
             "id": 90,
+            "adress": "Calle 25, Centro, 24400 Champotón, Camp.",
             "name": "Tesla S.A.",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
             "state": "free",
-            "geolocation": { "longitude": "-90.72389", "latitude": "19.35622" }
+            "geolocation": { "longitude": "-90.72389", "latitude": "19.35622" },
+            "rating": 4
         },
         {
             "id": 91,
+            "adress": "Calle 33, San Francisco, 24400 Hecelchakán, Camp.",
             "name": "Cuautehmoc EVC",
             "plug_type": "AC 43 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-90.13451", "latitude": "20.17697" }
+            "geolocation": { "longitude": "-90.13451", "latitude": "20.17697" },
+            "rating": 3
         },
         {
             "id": 92,
+            "adress": "Calle 20, Centro, Hopelchén, Camp.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
             "state": "free",
-            "geolocation": { "longitude": "-89.84505", "latitude": "19.74555" }
+            "geolocation": { "longitude": "-89.84505", "latitude": "19.74555" },
+            "rating": 4
         },
         {
             "id": 93,
+            "adress": "Centro, Palizada, Camp.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-92.0909", "latitude": "18.2536" }
+            "geolocation": { "longitude": "-92.0909", "latitude": "18.2536" },
+            "rating": 4
         },
         {
             "id": 94,
+            "adress": "Calle 19, Centro, Tenabo, Camp.",
             "name": "Cuautehmoc EVC",
             "plug_type": "AC 22 kW",
             "kw_price": "45",
             "state": "busy",
-            "geolocation": { "longitude": "-90.22576", "latitude": "20.03968" }
+            "geolocation": { "longitude": "-90.22576", "latitude": "20.03968" },
+            "rating": 5
         },
         {
             "id": 95,
+            "adress": "Zona Centro, 24350 Escárcega, Camp.",
             "name": "Tesla S.A.",
             "plug_type": "AC 22 kW",
             "kw_price": "45",
             "state": "free",
-            "geolocation": { "longitude": "-90.732", "latitude": "18.60431" }
+            "geolocation": { "longitude": "-90.732", "latitude": "18.60431" },
+            "rating": 5
         },
         {
             "id": 96,
+            "adress": "Calle 18 20-49, Centro, 24330 Candelaria, Camp.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 35 kW",
             "kw_price": "25",
             "state": "busy",
-            "geolocation": { "longitude": "-91.0463", "latitude": "18.18345" }
+            "geolocation": { "longitude": "-91.0463", "latitude": "18.18345" },
+            "rating": 4
         },
         {
             "id": 97,
+            "adress": "Lib. Emilio Mendoza Cisneros, El Sol, 26230 Cd Acuña, Coah.",
             "name": "BMW VECSA",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-100.9783", "latitude": "29.33001" }
+            "geolocation": { "longitude": "-100.9783", "latitude": "29.33001" },
+            "rating": 4
         },
         {
             "id": 98,
+            "adress": "Palacio Municipal, Zaragoza Sur, Zona Centro, 25700 Monclova, Coah.",
             "name": "Tesla S.A.",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-101.4172", "latitude": "26.90124" }
+            "geolocation": { "longitude": "-101.4172", "latitude": "26.90124" },
+            "rating": 4
         },
         {
             "id": 99,
+            "adress": "Valle San José, 26017 Piedras Negras, Coah.",
             "name": "Nissan",
             "plug_type": "DC 25 kW",
             "kw_price": "50",
             "state": "busy",
-            "geolocation": { "longitude": "-100.5284", "latitude": "28.70809" }
+            "geolocation": { "longitude": "-100.5284", "latitude": "28.70809" },
+            "rating": 5
         },
         {
             "id": 100,
+            "adress": "Zona Centro, 25000 Saltillo, Coah.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 25 kW",
             "kw_price": "35",
             "state": "busy",
-            "geolocation": { "longitude": "-100.9997", "latitude": "25.42167" }
+            "geolocation": { "longitude": "-100.9997", "latitude": "25.42167" },
+            "rating": 4
         }
     ]
 }
