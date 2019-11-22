@@ -205,94 +205,10 @@ body,
 	}
 }
 
-.navbar-brand p {
-	width: 89vw;
-	text-align: center;
-	font-size: 2rem;
-	padding: 0;
-	margin: 0;
+.navbar-brand {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
 }
-
-.img {
-	width: 11;
-}
-
-/*Calendario*/
-.calendario{
-	width: 50%;
-
-}
-.book-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #35a818;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-	margin: 0 0 0.25em;
-	text-align: center;
-}
-p{
-	text-align: center;
-}
-/*Horarios*/
-.select-hora {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-	text-align: center;
-}
-
-/* Remove IE arrow */
-select::-ms-expand {
-    display: none;
-}
-
-/* Custom Select */
-.select {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    background: #2c3e50;
-    overflow: hidden;
-    border-radius: .25em;
-}
-
-select {
-    flex: 1;
-    padding: 0 .5em;
-    color: rgb(20, 19, 19);
-    cursor: pointer;
-}
-
-/* Arrow */
-.select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: #34495e;
-    cursor: pointer;
-    pointer-events: none;
-    -webkit-transition: .25s all ease;
-    -o-transition: .25s all ease;
-    transition: .25s all ease;
-}
-
-/* Transition */
-.select:hover::after {
-    color: #f39c12;
-}
-
-/*Modal*/
