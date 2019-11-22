@@ -37,19 +37,7 @@ class UI {
                 iconAnchor: [25, 50]
             });
 
-            var map = L.map("map");
-            L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-                attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>',
-                minZoom: 1,
-                maxZoom: 18,
-                ext: 'png'
-            }).addTo(map);
 
-            let customIcon = new L.Icon({
-                iconUrl: 'https://image.flaticon.com/icons/svg/854/854866.svg',
-                iconSize: [50, 50],
-                iconAnchor: [25, 50]
-            });
 
 
             function buscarLocalizacion(e) {
