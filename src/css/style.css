@@ -231,6 +231,12 @@
                     color: white;
                 }
                 
+                .navbar-brand .black {
+                    color: black;
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+                
                 .navbar-brand .frase {
                     font-size: .7rem;
                 }
@@ -281,18 +287,24 @@
                 
                 .app-name {
                     margin-top: 5rem;
-                    margin-bottom: 1rem
+                    margin-bottom: 2rem
+                }
+                
+                .app-name h1 {
+                    font-size: 3rem;
+                    color: black;
+                    font-weight: bold;
                 }
                 
                 .app-slogan {
                     color: black;
-                    margin-bottom: 2.3rem;
+                    padding-bottom: 8rem;
                 }
                 /*SignUp View*/
                 
                 .auth-text {
                     margin-top: 3rem;
-                    margin-bottom: 2.5rem;
+                    margin-bottom: 6rem;
                 }
                 
                 .welcome-text h3 strong {
