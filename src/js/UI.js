@@ -18,7 +18,7 @@ class UI {
             L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
                 attribution: '© OpenStreetMap contributors',
                 minZoom: 1,
-                maxZoom: 5,
+                maxZoom: 10,
                 ext: 'png'
             }).addTo(map);
 
@@ -93,17 +93,18 @@ class UI {
 
     // Obtiene las sugerencias de la REST API
     obtenerSugerencias(search) {
-            this.api.getData().then(data => {
-                // Obtener los resultados
-                //const resultados = datos.respuestaJSON.results;
-                // Enviar el JSON y la busqueda al Filtro
-                this.filtrarSugerencias(data, search);
-                this.filtrarName(data, name);
-                // this.filtraPlug(data, plug)
+        this.api.getData().then(data => {
+            // Obtener los resultados
+            //const resultados = datos.respuestaJSON.results;
+            // Enviar el JSON y la busqueda al Filtro
+            this.filtrarSugerencias(data, search);
+            this.filtrarName(data, name);
 
-            });
-        }
-        // Filtrar las sugerencias de busqueda
+        });
+    };
+
+
+    // Filtrar las sugerencias de busqueda
     filtrarSugerencias(data, search) {
         const filterData = data.filter(
             filter => filter.state.indexOf(search) !== -1
@@ -112,19 +113,19 @@ class UI {
         this.showPins(filterData);
     }
 
-    filtrarName(data, nameStation) {
+    filtrarName(data, name) {
         const filterNameStation = data.filter(
-            filter => filter.name.indexOf(nameStation) !== -1
+            filter => filter.name.indexOf(name) !== -1
         );
         // Mostrar pines del Filtro
         this.showPins(filterNameStation);
     }
 
-    // filtraPlug(data, plug) {
-    //     const filterplug = data.filter(
-    //         filter => filter.plug_type.indexOf(plug) !== -1
-    //     );
-    //     // Mostrar pines del Filtro
-    //     this.showPins(filterplug);
-    // }
+    filtraplug(data, plug) {
+        const filterplug = data.filter(
+            filter => filter.plug_type.indexOf(plug) !== -1
+        );
+        // Mostrar pines del Filtro
+        this.showPins(filterData);
+    }
 }
