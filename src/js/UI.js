@@ -18,7 +18,7 @@ class UI {
             L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
                 attribution: '© OpenStreetMap contributors',
                 minZoom: 1,
-                maxZoom: 18,
+                maxZoom: 5,
                 ext: 'png'
             }).addTo(map);
 
@@ -98,6 +98,8 @@ class UI {
                 //const resultados = datos.respuestaJSON.results;
                 // Enviar el JSON y la busqueda al Filtro
                 this.filtrarSugerencias(data, search);
+                this.filtrarName(data, name);
+                // this.filtraPlug(data, plug)
 
             });
         }
@@ -110,19 +112,19 @@ class UI {
         this.showPins(filterData);
     }
 
-    filtrarName(data, name) {
-        const filterNameStatio = data.filter(
-            filter => filter.name.indexOf(name) !== -1
+    filtrarName(data, nameStation) {
+        const filterNameStation = data.filter(
+            filter => filter.name.indexOf(nameStation) !== -1
         );
         // Mostrar pines del Filtro
-        this.showPins(filterData);
+        this.showPins(filterNameStation);
     }
 
-    filtraplug(data, plug) {
-        const filterplug = data.filter(
-            filter => filter.plug_type.indexOf(plug) !== -1
-        );
-        // Mostrar pines del Filtro
-        this.showPins(filterData);
-    }
+    // filtraPlug(data, plug) {
+    //     const filterplug = data.filter(
+    //         filter => filter.plug_type.indexOf(plug) !== -1
+    //     );
+    //     // Mostrar pines del Filtro
+    //     this.showPins(filterplug);
+    // }
 }

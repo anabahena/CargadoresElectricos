@@ -39,7 +39,12 @@ body,
     color: white;
     background: black;
     margin: .5rem;
-    padding: .5rem;
+    padding: .8rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 @media (max-width: 768px) {
