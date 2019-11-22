@@ -31,7 +31,7 @@
         </div>
         <nav class="menuppal">
             <ul>
-                <li><img src="./img/HOME 1.png" alt=""></img><a href="#">Inicio</a></li>
+                <li><img src="./img/HOME 1.png" alt=""></img><a href="#home">Inicio</a></li>
                 <li><img src="./img/AUTO 1.png" alt=""></img><a href="#">Mis vehículos</a></li>
                 <li><img src="./img/CARD 1.png" alt=""></img><a href="#">Forma de pago</a></li>
                 <li><img src="./img/RUTA 1.png" alt=""></img><a href="#">Planea tu ruta</a></li>
@@ -41,7 +41,7 @@
     </section>
     <!--Mapa-buscador-->
     <section id="home">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-sm-12 col-12">
             <div class="navbar-brand d-flex justify-content-center">
                 <img style="height: 10vh" src="./img/enchufe (3).png" alt="">
                 <p><strong>ARGA </strong></p>
@@ -54,6 +54,8 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12">
+                    <p>Estatus:</p>
+                    <p>Estado de carga:</p>
                     <div id="map"></div>
                     <div id="buttons" class="d-flex justify-content-center">
                         <button class="btn-map" id="btn-llegar">¿Cómo llegar?</button>
@@ -65,81 +67,71 @@
         </div>
         </div>
     </section>
-<<<<<<< HEAD
     <!--Calendario-->
     <section id="calendario">
-        <h1>Hacer reservación</h1>
-        <p>Estación Alvaro Obregon</p>
-        <div class="calendario cuadros">
-            <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
-        </div>
-        <div>
-            <h1>Horarios Disponibles</h1>
-            <div class="select-hora">
-                <select name="slct" id="slct">
-                    <option selected disabled>Elige un horario</option>
-                    <option value="1">8:00 hrs</option>
-                    <option value="2">9:00 hrs</option>
-                    <option value="3">10:00 hrs</option>
-                </select>
+            </section>
+            <h1>Hacer reservación</h1>
+            <p>Estación Alvaro Obregon</p>
+            <div class="calendario cuadros">
+                <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
             </div>
-            ​
-        </div>
-        <!--Modal-->
-        <dialog id="confirm-modal" class="modal">
-                <div class="modal-content">
-                  <svg t="1574164208713" class="model-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5819" width="63" height="63"><path d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0zM512 877.714286c-40.228571 0-73.142857-32.914286-73.142857-73.142857s32.914286-73.142857 73.142857-73.142857 73.142857 32.914286 73.142857 73.142857S552.228571 877.714286 512 877.714286zM585.142857 512c0 40.228571-32.914286 73.142857-73.142857 73.142857s-73.142857-32.914286-73.142857-73.142857L438.857143 219.428571c0-40.228571 32.914286-73.142857 73.142857-73.142857s73.142857 32.914286 73.142857 73.142857L585.142857 512z" p-id="5820" fill="white"></path></svg>
-                  <h2 class="modal-title">Are you sure?</h2>
-                  <p class="modal-description">
-                    You can't undo this action.
-                  </p>
-                  <div class="modal-options">
-                    <button
-                      class="btn btn-round btn-fill btn-fill-left option confirm"
-                      data-text="Yes"
-                      onclick="document.querySelector('#confirm-modal').close()"
-                    ></button>
-                    <button
-                      class="btn btn-round btn-fill btn-fill-right option cancel"
-                      data-text="No"
-                      onclick="document.querySelector('#confirm-modal').close()"
-                    ></button>
-                  </div>
+            <div>
+                <h1>Horarios Disponibles</h1>
+                <div class="select-hora">
+                    <select name="slct" id="slct">
+                        <option selected disabled>Elige un horario</option>
+                        <option value="1">8:00 hrs</option>
+                        <option value="2">9:00 hrs</option>
+                        <option value="3">10:00 hrs</option>
+                    </select>
                 </div>
-              </dialog>
-              <form action="javascript:void(0);">
-                <button
-                  class="btn btn-danger"
-                  onclick="document.querySelector('#confirm-modal').showModal()"
-                >
-                  Delete history
+                ​
+            </div>
+            <!--Modal-->
+            <dialog id="confirm-modal" class="modal">
+                <div class="modal-content">
+                    <svg t="1574164208713" class="model-icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="5819" width="63" height="63">
+                        <path
+                            d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0zM512 877.714286c-40.228571 0-73.142857-32.914286-73.142857-73.142857s32.914286-73.142857 73.142857-73.142857 73.142857 32.914286 73.142857 73.142857S552.228571 877.714286 512 877.714286zM585.142857 512c0 40.228571-32.914286 73.142857-73.142857 73.142857s-73.142857-32.914286-73.142857-73.142857L438.857143 219.428571c0-40.228571 32.914286-73.142857 73.142857-73.142857s73.142857 32.914286 73.142857 73.142857L585.142857 512z"
+                            p-id="5820" fill="white"></path>
+                    </svg>
+                    <h2 class="modal-title">Are you sure?</h2>
+                    <p class="modal-description">
+                        You can't undo this action.
+                    </p>
+                    <div class="modal-options">
+                        <button class="btn btn-round btn-fill btn-fill-left option confirm" data-text="Yes"
+                            onclick="document.querySelector('#confirm-modal').close()"></button>
+                        <button class="btn btn-round btn-fill btn-fill-right option cancel" data-text="No"
+                            onclick="document.querySelector('#confirm-modal').close()"></button>
+                    </div>
+                </div>
+            </dialog>
+            <form action="javascript:void(0);">
+                <button class="btn btn-danger" onclick="document.querySelector('#confirm-modal').showModal()">
+                    Delete history
                 </button>
-              </form>
+            </form>
     </section>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <!-- <script src="js/main.js"></script> -->
-=======
-
     <script src="../leaflet/leaflet.js"></script>
     <script src="../leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-=======
->>>>>>> e51c08e27ce1f4aa6469da3ffdf74a12bece0b01
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js">
+    </script>
+    <!-- <script src="js/main.js"></script> -->
     <!-- Scripts Leaflet -->
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
->>>>>>> bd7b67029ab2b453d0605d19065fe47c48f83bac
     <script src="js/main.js"></script>
->>>>>>> c9fdbc0a0a5d4d2a72d4e284e38b178ff0a5fe8f
     <script src="js/API.js"></script>
     <script src="js/UI.js"></script>
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/calendar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -149,24 +141,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-=======
-<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-=======
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
->>>>>>> e51c08e27ce1f4aa6469da3ffdf74a12bece0b01
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/9137d3badd.js" crossorigin="anonymous"></script>
->>>>>>> bd7b67029ab2b453d0605d19065fe47c48f83bac
 </body>
 
 </html>
