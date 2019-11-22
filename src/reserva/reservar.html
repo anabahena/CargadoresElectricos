@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reservar.css">
+    <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Reserva</title>
+</head>
+
+<body>
+    <section class="book-content hide" id="calendario">
+        <h1>Hacer reservación</h1>
+        <p>Estación Alvaro Obregon</p>
+        <div class="calendar">
+            <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false" class="calendar is-blue calendar-today-color-green">
+        </div>
+        <div>
+            <h2>Horarios Disponibles</h2>
+            <div class="select">
+                <select name="slct" id="slct">
+                  <option selected disabled>Elige un horario</option>
+                  <option value="1">8:00 hrs</option>
+                  <option value="2">9:00 hrs</option>
+                  <option value="3">10:00 hrs</option>
+                  <option value="4">11:00 hrs</option>
+                  <option value="5">12:00 hrs</option>
+                  <option value="6">13:00 hrs</option>
+                  <option value="7">14:00 hrs</option>
+                  <option value="8">15:00 hrs</option>
+                  <option value="9">16:00 hrs</option>
+                  <option value="10">17:00 hrs</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="modal">
+            <dialog id="confirm-modal" class="modal">
+                <div class="modal-content">
+                    <svg t="1574164208713" class="model-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5819" width="63" height="63"><path d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0zM512 877.714286c-40.228571 0-73.142857-32.914286-73.142857-73.142857s32.914286-73.142857 73.142857-73.142857 73.142857 32.914286 73.142857 73.142857S552.228571 877.714286 512 877.714286zM585.142857 512c0 40.228571-32.914286 73.142857-73.142857 73.142857s-73.142857-32.914286-73.142857-73.142857L438.857143 219.428571c0-40.228571 32.914286-73.142857 73.142857-73.142857s73.142857 32.914286 73.142857 73.142857L585.142857 512z" p-id="5820" fill="white"></path></svg>
+                    <h2 class="modal-title">¿Estas seguro de realizar esta reserva?</h2>
+                    <p class="modal-description">
+                        Sábado 23 de Noviembre 2019 <br> 13:00 hrs.
+                    </p>
+                    <div class="modal-options">
+                        <button class="btn btn-round btn-fill btn-fill-left option confirm" data-text="Yes" onclick="document.querySelector('#confirm-modal').close()">Si
+                  </button>
+                        <button class="btn btn-round btn-fill btn-fill-right option cancel" data-text="No" onclick="document.querySelector('#confirm-modal').close()">Cancelar
+                  </button>
+                    </div>
+                </div>
+            </dialog>
+            <form action="javascript:void(0);">
+                <button class="btn btn-map" onclick="document.querySelector('#confirm-modal').showModal()">
+                Reservar
+              </button>
+            </form>
+        </div>
+    </section>
+
+    <section id="QR" class="hide">
+        <h3>Los datos de tu reserva son</h3>
+        Estación:Tesla <br> Dirección: Nieto, Zona Centro, 20000 Aguascalientes, Ags <br> Fecha: 23 de noviembre 2019 <br> Hora: 01:00 pm - 02:00 pm <br>
+        <img src="../assets/qr.png" alt="">
+    </section>
+
+
+    <script src="reservar.js"></script>
+</body>
+
+</html>

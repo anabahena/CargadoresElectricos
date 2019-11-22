@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.book-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: white;
+  }
+  h1, h2 {
+	margin: 0 0 0.25em;
+	text-align: center;
+  }
+
+  .calendar {
+  font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Reset Select */
+  select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: #2c3e50;
+    background-image: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+	display: none;
+  }
+  /* Custom Select */
+  .select {
+	position: relative;
+	display: flex;
+	width: 20em;
+	height: 3em;
+	line-height: 3;
+	background: #2c3e50;
+	overflow: hidden;
+	border-radius: .25em;
+  }
+  select {
+	flex: 1;
+	padding: 0 .5em;
+	color: #fff;
+	cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: #34495e;
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+	color: green;
+  }
+
+  .btn-map {
+    color: white;
+    background: black;
+    margin: .5rem;
+    padding: .8rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* // Modal // */
+p.modal-description {
+	text-align: center;
+}
+
+div.modal-options {
+	text-align: center;
+}
+  .btn {
+	color: white;
+    background: black;
+    margin: .5rem;
+    padding: .8rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+	line-height: 18px;
+	width: 10vw;
+	height: 10vh
+  }
+
+#QR{
+	text-align: center;
+}

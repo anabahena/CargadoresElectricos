@@ -1,4 +1,7 @@
 /*Mobile first*/
+body {
+    height: 100vh;
+}
 
 /*Welcome view*/
 .hide {
@@ -17,6 +20,30 @@
 
 .welcome-text {
     margin: 1rem;
+}
+
+.app-name {
+    margin-top: 5rem;
+    margin-bottom: 1rem
+}
+
+.app-slogan {
+    margin-bottom: 2.3rem;   
+}
+
+/*SignUp View*/
+.auth-text {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.input-form, input {
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.ux-text {
+    margin-top: 8rem;
 }
 
 /* .input-form {

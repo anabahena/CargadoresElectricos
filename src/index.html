@@ -1,239 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="calendar.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <!--Boolma CSS-->
-    <!-- <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet"> -->
 
-    <title>App| CARGA</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <!--Bulma CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.7/dist/css/bulma-calendar.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="reserva/reservar.css"> -->
+        <!-- <link rel="stylesheet" href="reserva/reservar.html"> -->
+        <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+        <title>App| CONECTA</title>
+    </head>
+
 </head>
-<!--Bienvenida con menu-->
 
 <body>
-
-
-
-
-
-    <div class="hamburger">
-        <div class="_layer -top"></div>
-        <div class="_layer -mid"></div>
-        <div class="_layer -bottom"></div>
-    </div>
-    <nav class="menuppal">
-        <ul>
-
-            <li>
-                <a href="#home"><img src="./assets/HOME 1.png" alt="home"></img>Inicio</a>
-            </li>
-            <li><img src="./assets/AUTO 1.png" alt=""></img><a href="#calendario">Mis vehículos</a></li>
-            <li><img src="./assets/CARD 1.png" alt=""></img><a href="#">Forma de pago</a></li>
-            <li><img src="./assets/RUTA 1.png" alt=""></img><a href="#">Planea tu ruta</a></li>
-            <li><img src="./assets/QR 2.png" alt=""></img> <a href="#">Mis reservas</a></li>
-        </ul>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-sm-12 col-12">
-        <div class="navbar-brand d-flex justify-content-center">
-            <img style="height: 10vh" src="./assets/enchufe (3).png" alt="logo">
-            <p><strong> ONECTA </strong></p>
-            <p class="frase">Previene, Planea y Eficienta</p>
-        </div>
-
-    </nav>
-
-
     <!--Welcome view-->
     <main class="container-fluid">
-        <section class="row align-items-center welcome-box" id="welcomeBox">
-            <div class="col-12">
-                <div class="col-12">
+        <section class="row welcome-box" id="welcome-box">
+            <div class="row">
+                <div class="col-12 app-name">
                     <figure>
-                        <img src="../assets/cargaText.png" width="100rem" alt="aplication-text">
+                        <img src="./assets/cargaText.png" width="130rem" alt="aplication-text">
                     </figure>
                 </div>
-                <div class="col-12">
+                <div class="col-12 app-logo">
                     <figure class="col">
-                        <img src="../assets/logoCarga.png" width="150rem" alt="app-logo">
+                        <img src="./assets/logoCarga.png" width="150rem" alt="app-logo">
                     </figure>
                 </div>
-                <div class="col-12 slogan-bienvenida">
+                <div class="col-12 app-slogan">
                     <h6>Previene, planea y eficienta</h6>
                 </div>
                 <div class="col-12">
-                    <button id="toLoginView" type="button" class="btn btn-dark .btn-lg welcome-btn">Inicia Sesión
-                        </button>
+                    <button id="toLoginView" type="button" class="btn btn-dark btn-lg welcome-btn">Inicia Sesión
+                    </button>
                 </div>
                 <div class="col-12">
-                    <button id="toSignupView" type="button" class="btn btn-dark .btn-lg welcome-btn">Registrate</button>
+                    <button id="toSignupView" type="button" class="btn btn-dark btn-lg welcome-btn">Registrate</button>
                 </div>
             </div>
         </section>
         <!--SignUp section-->
-        <section class="row align-items-center welcomeBoxRegistrer">
+        <section class="row welcome-box">
             <section class="hide" id="register-box">
-                <article class="welcome-text">
+                <article class="welcome-text auth-text">
                     <h3><strong>¡Te damos la bienvenida!</strong></h3>
                 </article>
-                <section class="input-group mb-3 input-form-registrer">
-                    <div class="col-12">
+                <section class="input-group mb-3 input-form">
+                    <div class="col-12 input-form">
                         <!--UserName-->
                         <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" id="register-name">
                         <!--UserMail-->
                         <input type="email" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1" id="register-mail">
                         <!--UserPassword-->
                         <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1" id="register-password">
-
                         <button type="button" class="btn btn-dark register-btn" id="sendingRegister-info">Guardar</button>
-                        <h6>¿Ya tienes una cuenta?
+                        <h6 class="ux-text">¿Ya tienes una cuenta?
                             <a href="#">Ingresar</a>
                         </h6>
                     </div>
                 </section>
             </section>
         </section>
-
         <!--Login section-->
-        <section class="row align-items-center welcome-box-login">
+        <section class="row welcome-box">
             <section class="hide" id="login-box">
                 <section class="input-group mb-3">
-                    <article class="welcome-text">
+                    <article class="welcome-text auth-text">
                         <h3><strong>¡Te damos la bienvenida!</strong></h3>
                     </article>
-                    <div class="col-12">
+                    <div class="col-12 input-form">
                         <!--UserName-->
-                        <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username" aria-describedby="basic-addon1" id="login-name">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" id="login-name">
                         <!--UserMail-->
-                        <input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username" aria-describedby="basic-addon1" id="login-mail">
+                        <input type="email" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1" id="login-mail">
                         <!--UserPassword-->
                         <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1" id="login-password">
-
                         <button type="button" class="btn btn-dark login-btn login-btn" id="sendingLogin-info">
-                                Iniciar sesión
-                            </button>
-                        <h6>¿No tienes una cuenta?
+                            Iniciar sesión
+                        </button>
+                        <h6 class="ux-text">¿No tienes una cuenta?
                             <a href="#">Registrate</a>
                         </h6>
                     </div>
                 </section>
             </section>
         </section>
+
+        <!-- mapa, hamburger -->
+        <div id="navbar" class="hide container-fluid">
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+
+            <nav class="menuppal">
+                <ul>
+                    <li>
+                        <a href="#home"><img src="./assets/HOME 1.png" alt="home"></img>Inicio</a>
+                    </li>
+                    <li><img src="./assets/AUTO 1.png" alt=""></img><a href="#calendario">Mis vehículos</a></li>
+                    <li><img src="./assets/CARD 1.png" alt=""></img><a href="#">Forma de pago</a></li>
+                    <li><img src="./assets/RUTA 1.png" alt=""></img><a href="#">Planea tu ruta</a></li>
+                    <li><img src="./assets/QR 2.png" alt=""></img> <a href="#">Mis reservas</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <!--Mapa-buscador-->
-        <section id="home">
+        <section id="home" class="hide">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-sm-12 col-12">
+                <div class="navbar-brand d-flex justify-content-center">
+                    <img style="height: 10vh" src="./assets/enchufe (3).png" alt="logo">
+                    <p><strong> ONECTA </strong></p>
+                </div>
+            </nav>
+            <form id="search" class=" my-2 my-lg-0">
+                <i class="glyphicon glyphicon-search"></i>
+                <input id="search-input" class="form-control btn-lg " type="text" placeholder="Buscar estación" />
+            </form>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="status">
+                            <p>Actualmente estás cargando en la estación:</p>
+                            <p>Estatus:</p>
+                            <p>Estado de carga:
+                                <div class="container-battery">
+                                    <div id="battery" class="fa"></div>
+                                </div>
+                            </p>
+                        </div>
 
-
-            <section class="section-home">
-                <form id="search" class=" my-2 my-lg-0">
-                    <i class="glyphicon glyphicon-search"></i>
-                    <input id="search-input" class="form-control" type="text" placeholder="Buscar estación" />
-                </form>
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="status">
-                                <p>Actualmente estás cargando en la estación:</p>
-                                <p>Estatus:</p>
-                                <p>Estado de carga:
-                                    <div class="container-battery">
-                                        <div id="battery" class="fa"></div>
-                                    </div>
-                                </p>
-                            </div>
-
-                            <div id="map"></div>
-                            <div id="buttons" class="d-flex justify-content-center">
-                                <button class="btn-map" id="btn-llegar">¿Cómo llegar?</button>
-                                <button class="btn-map">Reservar</button>
-                            </div>
+                        <div id="map"></div>
+                        <div id="buttons" class="d-flex justify-content-center">
+                            <button class="btn-map" id="btn-llegar">¿Cómo llegar?</button>
+                            <button class="btn-map">Reservar</button>
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
-            </section>
-
-        </section>
-
-        <!--Calendario-->
-        <section id="calendario" class="section-calendar">
-            <h1>Hacer reservación</h1>
-            <p>Estación Alvaro Obregon</p>
-            <div class="calendario cuadros">
-                <input type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">
-            </div>
-            <div>
-                <h1>Horarios Disponibles</h1>
-                <div class="select-hora">
-                    <select name="slct" id="slct">
-                                    <option selected disabled>Elige un horario</option>
-                                    <option value="1">8:00 hrs</option>
-                                    <option value="2">9:00 hrs</option>
-                                    <option value="3">10:00 hrs</option>
-                                </select>
-                </div>
-                ​
             </div>
         </section>
-        <!--Modal-->
-        <dialog id="confirm-modal" class="modal">
-            <div class="modal-content">
-                <svg t="1574164208713" class="model-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5819" width="63" height="63">
-                                <path
-                                    d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0zM512 877.714286c-40.228571 0-73.142857-32.914286-73.142857-73.142857s32.914286-73.142857 73.142857-73.142857 73.142857 32.914286 73.142857 73.142857S552.228571 877.714286 512 877.714286zM585.142857 512c0 40.228571-32.914286 73.142857-73.142857 73.142857s-73.142857-32.914286-73.142857-73.142857L438.857143 219.428571c0-40.228571 32.914286-73.142857 73.142857-73.142857s73.142857 32.914286 73.142857 73.142857L585.142857 512z"
-                                    p-id="5820" fill="white"></path>
-                            </svg>
-                <h2 class="modal-title">Are you sure?</h2>
-                <p class="modal-description">
-                    You can't undo this action.
-                </p>
-                <div class="modal-options">
-                    <button class="btn btn-round btn-fill btn-fill-left option confirm" data-text="Yes" onclick="document.querySelector('#confirm-modal').close()"></button>
-                    <button class="btn btn-round btn-fill btn-fill-right option cancel" data-text="No" onclick="document.querySelector('#confirm-modal').close()"></button>
-                </div>
-            </div>
-        </dialog>
-        <form action="javascript:void(0);" class="button-delete">
-            <button class="btn btn-danger" onclick="document.querySelector('#confirm-modal').showModal()">
-                            Delete history
-                </button>
-        </form>
     </main>
 
 
-    </section>
 
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-    <script src="../leaflet/leaflet.js"></script>
-    <script src="../leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js">
-    </script>
-    <!-- <script src="js/main.js"></script> -->
 
+    <!--Link to login functionality-->
+    <script src="./auth/register.js"></script>
+    <script src="./auth/dom.js"></script>
+    <!--Link to Firebase document with SDK -->
+    <script src="./auth/initialize.js"></script>
     <!-- Scripts Leaflet -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-
     <!-- Scripts archivos .js -->
-
     <script src="js/main.js"></script>
-
     <script src="js/API.js"></script>
     <script src="js/UI.js"></script>
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="reserva/reservar.js"></script>
+    <!-- <script src="js/calendar.js"></script> -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -241,13 +183,9 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/9137d3badd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.7/dist/js/bulma-calendar.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/9137d3badd.js" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

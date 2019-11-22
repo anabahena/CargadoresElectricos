@@ -133,6 +133,10 @@
                     padding: 0;
                 }
                 
+                .navbar {
+                    position: inherit;
+                }
+                
                 .navbar a {
                     /* background: black; */
                     font-size: 2rem;
@@ -201,7 +205,17 @@
                 @media (max-width: 768px) {
                     #search,
                     #search input {
+                        width: 90%;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+                
+                @media (max-width: 425px) {
+                    .menuppal {
                         width: 100%;
+                        margin: 0;
+                        padding: 0;
                     }
                 }
                 
@@ -211,6 +225,10 @@
                     font-size: 2.5rem;
                     padding: 0;
                     margin: 0;
+                }
+                
+                .navbar-brand p strong {
+                    color: white;
                 }
                 
                 .navbar-brand .frase {
@@ -236,6 +254,11 @@
                 /*Mobile first*/
                 /*Welcome view*/
                 
+                body {
+                    height: 100vh;
+                }
+                /*Welcome view*/
+                
                 .hide {
                     display: none;
                 }
@@ -256,15 +279,43 @@
                     margin: 1rem;
                 }
                 
-                .slogan-bienvenida {
+                .app-name {
+                    margin-top: 5rem;
+                    margin-bottom: 1rem
+                }
+                
+                .app-slogan {
+                    color: black;
+                    margin-bottom: 2.3rem;
+                }
+                /*SignUp View*/
+                
+                .auth-text {
+                    margin-top: 3rem;
+                    margin-bottom: 2.5rem;
+                }
+                
+                .welcome-text h3 strong {
+                    margin-top: 3rem;
+                    margin-bottom: 2.5rem;
+                    color: black;
+                }
+                
+                .input-form,
+                input {
+                    margin-bottom: 1rem;
+                    border-radius: 2rem;
+                }
+                
+                .ux-text {
+                    margin-top: 8rem;
                     color: black;
                 }
                 /* .input-form {
-    margin: 1rem;
-} */
+                    margin: 1rem;
+                } */
                 /* ocultar */
-                
-                .welcome-box-registrer {
+                /* .welcome-box-registrer {
                     display: block;
                 }
                 
@@ -282,4 +333,14 @@
                 
                 .button-delete {
                     display: none;
+                } */
+                
+                .section-home {
+                    display: none;
+                }
+                
+                .container-fluid {
+                    /* width: 100% !important; */
+                    padding: 0;
+                    margin: 0;
                 }

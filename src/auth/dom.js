@@ -22,6 +22,19 @@ const renderSignUp = document.getElementById('toSignupView');
 const loginBtn = document.getElementById('sendingLogin-info');
 const registerBtn = document.getElementById('sendingRegister-info');
 
+const sectionMap = document.getElementById('home');
+
+const navBar = document.getElementById('navbar');
+
+const btnReservar = document.getElementById('btn-map');
+const calendario = document.getElementById('calendario');
+
+const getCalendar = () => {
+
+};
+
+registerBtn.addEventListener('click', getSectionLogin);
+
 
 //Function to display selected area
 const goSection = (section) => {
@@ -41,17 +54,17 @@ renderLogin.addEventListener('click', () => {
 });
 
 registerBtn.addEventListener('click', () => {
-    console.log('entra a registerBtn');
-    
+    navBar.classList.remove('hide')
+    registerView.classList.add("hide");
+    sectionMap.classList.remove("hide");
+
     // signUp(registerMail.value,registerPassword.value);
 });
 
 loginBtn.addEventListener('click', () => {
-console.log('Inicia sesión');
+    console.log('Inicia sesión');
 });
 
 loginBtn.addEventListener('click', () => {
     console.log('esto es para iniciar sesion');
 });
-
-

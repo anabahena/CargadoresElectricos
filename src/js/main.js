@@ -17,12 +17,3 @@ function chargebattery() {
 }
 chargebattery();
 setInterval(chargebattery, 5000);
-
-
-
-const btnLogin = document.getElementById('toLoginView');
-
-const getSectionLogin = () => {
-    welcomeBoxRegistrer.classList.add("disappear");
-    welcomeBox.classList.remove("appear");
-};
