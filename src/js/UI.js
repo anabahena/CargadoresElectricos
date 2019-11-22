@@ -18,18 +18,18 @@ class UI {
             L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}{r}.png', {
                 attribution: '© OpenStreetMap contributors',
                 minZoom: 1,
-                maxZoom: 10,
+                maxZoom: 20,
                 ext: 'png'
             }).addTo(map);
 
-            // L.Routing.control({
-            //     waypoints: [
-            //         L.latLng(19.421348, -99.163183),
-            //         L.latLng(19.420184, -99.160555)
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(19.421348, -99.163183),
+                    L.latLng(19.420184, -99.160555)
 
-            //     ],
-            //     routeWhileDragging: true
-            // }).addTo(map);
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
 
             let customIcon = new L.Icon({
                 iconUrl: 'https://image.flaticon.com/icons/svg/854/854866.svg',
