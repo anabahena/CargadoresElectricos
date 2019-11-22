@@ -213,6 +213,10 @@
                     margin: 0;
                 }
                 
+                .navbar-brand .frase {
+                    font-size: .7rem;
+                }
+                
                 strong {
                     color: white;
                 }
@@ -228,4 +232,54 @@
                 #container-batter {
                     width: 5vw;
                     height: 10vh;
+                }
+                /*Mobile first*/
+                /*Welcome view*/
+                
+                .hide {
+                    display: none;
+                }
+                
+                .welcome-box {
+                    text-align: center;
+                }
+                
+                .welcome-btn,
+                .register-btn,
+                .login-btn {
+                    background-color: #000000;
+                    margin: .7rem;
+                    width: 15rem;
+                }
+                
+                .welcome-text {
+                    margin: 1rem;
+                }
+                
+                .slogan-bienvenida {
+                    color: black;
+                }
+                /* .input-form {
+    margin: 1rem;
+} */
+                /* ocultar */
+                
+                .welcome-box-registrer {
+                    display: block;
+                }
+                
+                .welcome-box-login {
+                    display: none;
+                }
+                
+                .section-home {
+                    display: none;
+                }
+                
+                .section-calendar {
+                    display: none;
+                }
+                
+                .button-delete {
+                    display: none;
                 }
