@@ -29,7 +29,7 @@ body {
 }
 
 ._layer {
-    background: #333333;
+    background: #fffcfc;
     margin-bottom: 4px;
     border-radius: 2px;
     width: 28px;
@@ -74,7 +74,7 @@ body {
 }
 
 .menuppal {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(236, 231, 231, 0.95);
     bottom: 0;
     height: 100%;
     left: 0;
@@ -115,9 +115,10 @@ body {
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: aliceblue;
 }
 
 html,
@@ -128,12 +129,13 @@ body,
 
 #home {
     margin: 0;
-    padding: 0;
+	padding: 0;
+	
 }
 
 .navbar a {
-    /* background: black; */
-    font-size: 2rem;
+	/* background: black; */
+	font-size: 2rem;
 }
 
 #search {
@@ -158,50 +160,52 @@ body,
 }
 
 .btn-map {
-    color: white;
-    background: black;
-    margin: .5rem;
-    padding: .8rem;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+	color: white;
+	background: black;
+	margin: .5rem;
+	padding: .8rem;
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
 }
 
 
 /* estrellas */
 
 .star-rating {
-    direction: rtl;
-    display: inline-block;
-    padding: 20px;
+	direction: rtl;
+	display: inline-block;
+	padding: 20px;
 }
 
 .star-rating input[type="radio"] {
-    display: none;
+	display: none;
 }
 
 .star-rating label {
-    color: #bbb;
-    font-size: 18px;
-    padding: 0;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+	color: #bbb;
+	font-size: 18px;
+	padding: 0;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .star-rating label:hover,
 .star-rating label:hover~label,
 .star-rating input[type="radio"]:checked~label {
-    color: #F2B600;
+	color: #F2B600;
 }
 
 @media (max-width: 768px) {
-    #search,
-    #search input {
-        width: 100%;
-    }
+
+	#search,
+	#search input {
+		width: 100%;
+	}
 }
 
 .navbar-brand {
@@ -210,4 +214,8 @@ body,
     font-size: 2.5rem;
     padding: 0;
     margin: 0;
+}
+
+strong{
+	color: white;
 }
