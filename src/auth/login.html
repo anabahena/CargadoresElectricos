@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximumscale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <!--Enlace a firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <title>App| Electro-charge</title>
+</head>
+
+<body>
+    <!--Welcome view-->
+    <main class="container-fluid">
+        <section class="row align-items-center welcome-box" id="welcome-box">
+            <div class="col-12">
+                <div class="col-12">
+                    <figure>
+                        <img src="../assets/cargaText.png" width="100rem" alt="aplication-text">
+                    </figure>
+                </div>
+                <div class="col-12">
+                    <figure class="col">
+                        <img src="../assets/logoCarga.png" width="150rem" alt="app-logo">
+                    </figure>
+                </div>
+                <div class="col-12">
+                    <h6>Previene, planea y eficienta</h6>
+                </div>
+                <div class="col-12">
+                    <button id="toLoginView" type="button" class="btn btn-dark .btn-lg welcome-btn">Inicia Sesión
+                    </button>
+                </div>
+                <div class="col-12">
+                    <button id="toSignupView" type="button" class="btn btn-dark .btn-lg welcome-btn">Registrate</button>
+                </div>
+            </div>
+        </section>
+        <!--SignUp section-->
+        <section class="hide" id="register-box">
+            <section class="input-group mb-3">
+                <!--UserName-->
+                <article class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                </article>
+
+                <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username"
+                    aria-describedby="basic-addon1" id="register-name" value="123">
+                <!--UserMail-->
+                <input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username"
+                    aria-describedby="basic-addon1" id="register-mail">
+                <!--UserPassword-->
+                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username"
+                    aria-describedby="basic-addon1" id="register-password">
+
+                <button type="button" class="btn btn-dark" id="sendingRegister-info">Enviar</button>
+            </section>
+        </section>
+        <!--Login section-->
+        <section class="hide" id="login-box">
+            <section class="input-group mb-3">
+                <!--UserName-->
+                <article class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </article>
+
+                <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username"
+                    aria-describedby="basic-addon1" id="login-name">
+                <!--UserMail-->
+                <input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username"
+                    aria-describedby="basic-addon1" id="login-mail">
+                <!--UserPassword-->
+                <input type="password" class="form-control" placeholder="Contraseña" aria-label="Username"
+                    aria-describedby="basic-addon1" id="login-password">
+
+                <button type="button" class="btn btn-dark" id="sendingLogin-info">Enviar</button>
+            </section>
+        </section>
+    </main>
+    <!--Link to login functionality-->
+    <script src="register.js"></script>
+    <script src="dom.js"></script>
+    <!--Link to Firebase document with SDK -->
+    <script src="initialize.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
