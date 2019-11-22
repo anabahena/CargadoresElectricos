@@ -90,11 +90,11 @@ class UI {
                            </div>
                            `;
                 const optionsPopUp = L.popup().setContent(`
-                              <p>${name}</p>
-                              <p>Dirección: ${adress}</p>
-                              <p> <b>Precio:</b> $ ${kw_price}</p>
-                              <p> <b>Conector:</b> ${plug_type}</p>
-                              <p style="color: green"> <b>Disponible</b> </p>
+                            <p style="color: green"> <b>Disponible</b> </p>
+                            <p>${name}</p>
+                            <p>Dirección: ${adress}</p>
+                            <p> <b>Precio:</b> $ ${kw_price}</p>
+                            <p> <b>Conector:</b> ${plug_type}</p>
                               ${starRating}
                               `);
                 // Agregar el Pin
@@ -119,11 +119,11 @@ class UI {
                            </div>
                            `;
                 const optionsPopUp = L.popup().setContent(`
-                              <p>${name}</p>
-                              <p>Dirección: ${adress}</p>
-                              <p> <b>Precio:</b> $ ${kw_price}</p>
-                              <p> <b>Conector:</b> ${plug_type}</p>
-                              <p style="color: red"> <b>Ocupada</b> </p>
+                            <p style="color: red"> <b>Ocupada</b> </p>
+                            <p>${name}</p>
+                            <p>Dirección: ${adress}</p>
+                            <p> <b>Precio:</b> $ ${kw_price}</p>
+                            <p> <b>Conector:</b> ${plug_type}</p>
                               ${starRating}
                               `);
                 const myCustomColour = "#BD2214";
