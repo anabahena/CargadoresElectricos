@@ -31,11 +31,13 @@
         <nav class="menuppal">
             <ul>
 
-                <li><img src="./assets/HOME 1.png" alt=""></img><a href="#">Inicio</a></li>
-                <li><img src="./assets/AUTO 1.png" alt=""></img><a href="#">Mis vehículos</a></li>
+                <li>
+                    <a href="#home"><img src="./assets/HOME 1.png" alt="home"></img>Inicio</a>
+                </li>
+                <li><img src="./assets/AUTO 1.png" alt=""></img><a href="#calendario">Mis vehículos</a></li>
                 <li><img src="./assets/CARD 1.png" alt=""></img><a href="#">Forma de pago</a></li>
                 <li><img src="./assets/RUTA 1.png" alt=""></img><a href="#">Planea tu ruta</a></li>
-                <li><img src="./assets/QR 2.png" alt=""></img><a href="#">Mis reservas</a></li>
+                <li><img src="./assets/QR 2.png" alt=""></img> <a href="#">Mis reservas</a></li>
             </ul>
         </nav>
     </section>
@@ -54,8 +56,16 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12">
-                    <p>Estatus:</p>
-                    <p>Estado de carga:</p>
+                    <div class="status">
+                        <p>Actualmente estás cargando en la estación:</p>
+                        <p>Estatus:</p>
+                        <p>Estado de carga:
+                            <div class="container-battery">
+                                <div id="battery" class="fa"></div>
+                            </div>
+                        </p>
+                    </div>
+
                     <div id="map"></div>
                     <div id="buttons" class="d-flex justify-content-center">
                         <button class="btn-map" id="btn-llegar">¿Cómo llegar?</button>
