@@ -1,12 +1,6 @@
-const registerName = document.getElementById('register-name');
-const registerMail = document.getElementById('register-mail');
-const registerPassword = document.getElementById('register-password');
-
-const registerBtn = document.getElementById('sending-info');
-
-const signUp = (registerMail, registerPassword) => {
-    let email = registerMail.value;
-    console.log(email);
+const signUp = (mail, password) => {
+    console.log(mail, password);
+    
     // firebase.auth().createUserWithEmailAndPassword(email, password)
     // .then(()=> {
     //     console.log('hola');
@@ -20,4 +14,3 @@ const signUp = (registerMail, registerPassword) => {
     //     });
 }
 
-registerBtn.addEventListener('click', signUp);
