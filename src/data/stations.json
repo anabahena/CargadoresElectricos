@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "adress": "",
+            "adress": "Nieto, Zona Centro, 20000 Aguascalientes, Ags.",
             "name": "Nissan",
             "plug_type": "AC 30 kW",
             "kw_price": "25",
@@ -21,7 +21,7 @@
         },
         {
             "id": 3,
-            "adress": "",
+            "adress": "Calvillo - Aguascalientes, Zona Centro, 20800 Calvillo, Ags.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 50 kW",
             "kw_price": "35",
@@ -31,7 +31,7 @@
         },
         {
             "id": 4,
-            "adress": "",
+            "adress": "Cornelio Acosta, Centro, Cosío, Ags.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
@@ -41,6 +41,7 @@
         },
         {
             "id": 5,
+            "adress": "Centro, Palo Alto, Ags.",
             "name": "BMW VECSA",
             "plug_type": "DC 35 kW",
             "kw_price": "50",
@@ -49,7 +50,7 @@
         },
         {
             "id": 6,
-            "adress": "",
+            "adress": "José Ma. Morelos 107, Zona Centro, 20920 Jesús María, Ags.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "DC 50 kW",
             "kw_price": "25",
@@ -59,7 +60,7 @@
         },
         {
             "id": 7,
-            "adress": "",
+            "adress": "Zona Centro, 20670 Pabellón de Arteaga, Ags.",
             "name": "Nissan",
             "plug_type": "AC 30 kW",
             "kw_price": "25",
@@ -69,7 +70,7 @@
         },
         {
             "id": 8,
-            "adress": "",
+            "adress": "Zona Centro, 20400 Rincón de Romos, Ags.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 35 kW",
             "kw_price": "45",
@@ -79,7 +80,7 @@
         },
         {
             "id": 9,
-            "adress": "",
+            "adress": "Francisco Romo Jiménez 102, San José de Buenavista, 20300 San Francisco de los Romo, Ags.",
             "name": "EV Chargers Mexico",
             "plug_type": "DC 35 kW",
             "kw_price": "50",
@@ -89,7 +90,7 @@
         },
         {
             "id": 10,
-            "adress": "",
+            "adress": "Juan Domínguez 101-103, Col. las Canadas, San José de Gracia, Ags.",
             "name": "Nissan",
             "plug_type": "DC 25 kW",
             "kw_price": "25",
@@ -99,7 +100,7 @@
         },
         {
             "id": 11,
-            "adress": "",
+            "adress": "Plaza Juárez 1, Centro Histórico, Rincón de Romos, Ags.",
             "name": "Empresa electrica",
             "plug_type": "DC 35 kW",
             "kw_price": "45",
@@ -109,7 +110,7 @@
         },
         {
             "id": 12,
-            "adress": "",
+            "adress": "Ébano, Adolfo Ruiz Cortines, 22895 Ensenada, B.C.",
             "name": "BMW VECSA",
             "plug_type": "AC 43 kW",
             "kw_price": "45",
@@ -119,7 +120,7 @@
         },
         {
             "id": 13,
-            "adress": "",
+            "adress": "Edificio del Poder Ejecutivo del Estado, Calz Independencia 994, Centro Cívico, 21000 Mexicali, B.C.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 30 kW",
             "kw_price": "50",
@@ -129,7 +130,7 @@
         },
         {
             "id": 14,
-            "adress": "",
+            "adress": "Palacio Municipal, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.",
             "name": "Cuautehmoc EVC",
             "plug_type": "AC 30 kW",
             "kw_price": "35",
@@ -139,7 +140,7 @@
         },
         {
             "id": 15,
-            "adress": "",
+            "adress": "Pliego, 21400 Tecate, B.C.",
             "name": "EV Chargers Mexico",
             "plug_type": "AC 43 kW",
             "kw_price": "50",
@@ -149,7 +150,7 @@
         },
         {
             "id": 16,
-            "adress": "",
+            "adress": "Callejón Chiriyaqui 2610, Los Olivos, 23040 La Paz, B.C.S.",
             "name": "Nissan",
             "plug_type": "DC 35 kW",
             "kw_price": "35",
@@ -159,7 +160,7 @@
         },
         {
             "id": 17,
-            "adress": "",
+            "adress": "Antonio Mijares 1413, San José del Cabo Centro, 23400 Los Cabos, B.C.S.",
             "name": "Tesla S.A.",
             "plug_type": "DC 50 kW",
             "kw_price": "25",
@@ -169,7 +170,7 @@
         },
         {
             "id": 18,
-            "adress": "",
+            "adress": "Calle Agua Dulce, Centro, Loreto, B.C.S.",
             "name": "Tesla S.A.",
             "plug_type": "DC 50 kW",
             "kw_price": "35",
@@ -179,7 +180,7 @@
         },
         {
             "id": 19,
-            "adress": "",
+            "adress": "H. Ayuntamiento de Comondú, Álvaro Obregón, Centro, Cd Constitución, B.C.S.",
             "name": "Cargadoras reales mexicanas",
             "plug_type": "AC 22 kW",
             "kw_price": "45",
@@ -189,7 +190,7 @@
         },
         {
             "id": 20,
-            "adress": "",
+            "adress": "Calle P. Altamirano 6 Centro 23920 Centro, Centro, 23920 Santa Rosalía, B.C.S.",
             "name": "Cuautehmoc EVC",
             "plug_type": "DC 50 kW",
             "kw_price": "50",
