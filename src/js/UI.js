@@ -98,7 +98,7 @@ class UI {
             //const resultados = datos.respuestaJSON.results;
             // Enviar el JSON y la busqueda al Filtro
             this.filtrarSugerencias(data, search);
-            this.filtrarName(data, name);
+            // this.filtrarName(data, name);
 
         });
     };
